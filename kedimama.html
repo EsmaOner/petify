@@ -1,0 +1,928 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petify - Kedi Mama Sayfası</title>
+    
+    <link rel="stylesheet" href="kedimamast.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&family=Inter:wght@400;500;600;700&family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <a href="anasayfa.html">
+                    <img src="img/petify.png" alt="Petify Logo" class="petify-logo"> 
+                </a>
+            </div>
+            
+           <nav>
+
+  <div class="nav-item">
+             <a href="anasayfa.html" class="nav-link">Ana Sayfa</a>
+        </div>
+
+            <div class="nav-item">
+                <a href="kediurunler.html" class="nav-link">Kedi Ürünleri</a>
+                <div class="mega-menu">
+                    <div class="menu-column">
+                        <h3>Beslenme & Sağlık</h3>
+                     <div class="submenu-group">
+                           <a href="kedimama.html"><h4>-Kedi Maması</h4></a>
+                           <a href="kedimama.html#kuru-mama">Kuru Mama</a>
+                           <a href="kedimama.html#konserve-mama">Konserve Mama</a>
+                           <a href="kedimama.html#odul-mamasi">Ödül Maması</a>
+                      </div>
+                        <div class="submenu-group">
+                           <a href="saglıkvemama.html"></a> <h4>-Sağlık & Takviye</h4>
+                           <a href="vitaminler.html#vitaminler"></a> <a href="#">Vitaminler</a>
+                           <a href="maltlar.html#maltlar"></a> <a href="#">Maltlar</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <h3>Yaşam Alanı & Seyahat</h3>
+                        <div class="submenu-group">
+                             <a href="kediyatak.html"></a><h4>-Kedi Yatağı</h4>
+                             <a href="keditasımacanta.html"></a><h4>-Kedi Taşıma Çantası</h4>
+                             <a href="kedimamasukabi.html"></a><h4>-Mama ve Su Kabı</h4>
+                        </div>
+                        <div class="submenu-group">
+                             <a href="kedituvaleturun.html"></a><h4>-Kedi Tuvalet Ürünleri</h4>
+                             <a href="kedikum.html"></a><a href="#">Kedi Kumu</a>
+                             <a href="kedikumkabı.html"></a><a href="#">Kum Kabı</a>
+                             <a href="kedikumkurek.html"></a><a href="#">Kürek</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <h3>Eğlence & Bakım</h3>
+                        <div class="submenu-group">
+                             <a href="kedioyuncakveaksesuar.html"></a><h4>-Oyuncak ve Aksesuar</h4>
+                             <a href="kedioyuncak.html"></a><a href="#">Kedi Oyuncakları</a>
+                             <a href="keditirmalamatahta.html"></a><a href="#">Tırmalama Tahtası</a>
+                             <a href="keditasma.html"></a><a href="#">Kedi Tasması ve Gezdirme</a>
+                        </div>
+                        <div class="submenu-group">
+                             <a href="kedibakimurun.html"></a><h4>-Kedi Bakım Ürünleri</h4>
+                             <a href="kedituybakim.html"></a><a href="#">Tüy Bakım Ürünleri</a>
+                             <a href="kedigozkulaktemizlik.html"></a><a href="#">Göz ve Kulak Temizliği</a>
+                             <a href="keditirnakbakim.html"></a><a href="#">Tırnak Bakım Ürünleri</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-item">
+                <a href="kopek-sayfasi.html" class="nav-link">Köpek Ürünleri</a>
+                <div class="mega-menu">
+                    <div class="menu-column">
+                        <h3>Beslenme & Sağlık</h3>
+                        <div class="submenu-group">
+                             <a href="kopekmama.html"></a><h4>-Köpek Maması</h4>
+                             <a href="kopekmama.html"></a><a href="#">Kuru Mama</a>
+                             <a href="kopekmama.html"></a><a href="#">Konserve Mama</a>
+                             <a href="kopekmama.html"></a><a href="#">Ödül Maması</a>
+                        </div>
+                        <div class="submenu-group">
+                             <a href="kopeksaglikvetakviye.html"></a><h4>-Sağlık & Takviye</h4>
+                             <a href="kopekvitamin.html"></a><a href="#">Vitaminler</a>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <h3>Yaşam Alanı & Seyahat</h3>
+                        <div class="submenu-group">
+                             <a href="kopekyatak.html"></a><h4>-Köpek Yatağı</h4>
+                             <a href="kopektasimakafes.html"></a><h4>-Köpek Taşıma Kafesi</h4>
+                             <a href="kopekmamasukabi.html"></a><h4>-Mama ve Su Kabı</h4>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <h3>Eğlence & Bakım</h3>
+                        <div class="submenu-group">
+                            <a href="kopekoyuncakveaksesuar.html"></a><h4>-Oyuncak ve Aksesuar</h4>
+                            <a href="kopekoyuncak.html"></a><a href="#">Köpek Oyuncakları</a>
+                            <a href="kopektasma.html"></a><a href="#">Köpek Tasması ve Gezdirme</a>
+                        </div>
+                        <div class="submenu-group">
+                            <a href="kopekbakiurun.html"></a><h4>-Köpek Bakım Ürünleri</h4>
+                            <a href="kopektuybakim.html"></a><a href="#">Tüy Bakım Ürünleri</a>
+                            <a href="kopekgozkulakurunleri.html"></a><a href="#">Göz ve Kulak Temizliği</a>
+                            <a href="kopektirnakbakim.html"></a><a href="#">Tırnak Bakım Ürünleri</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<div class="header-actions">
+ 
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                 <div class="search-box">
+               <input type="text" placeholder="Ara...">
+                 <i class="fa-solid fa-magnifying-glass"></i>
+                   </div>
+                <div class="icons">
+                    <a href="sepet.html" aria-label="Sepetim">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                    <a href="bildirimler.html" aria-label="Bildirimler">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                  <div class="profile-container">
+    <a href="profil.html" class="profile-icon">
+        <i class="fa-regular fa-circle-user"></i>
+    </a>
+
+    <div class="dropdown-menu">
+        <p class="welcome-msg">Hesabınıza erişin</p>
+        
+        <div class="action-buttons">
+            <a href="giris.html" class="btn login">
+                <i class="fa-solid fa-right-to-bracket"></i> Giriş Yap
+            </a>
+            <a href="kayit.html" class="btn register">
+                <i class="fa-solid fa-user-plus"></i> Kayıt Ol
+            </a>
+        </div>
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="sub-nav">
+                    <ul>
+                        <li><a href="#kuru-mama">Kuru Mama</a></li>
+                        <li><a href="#konserve-mama">Konserve Mama</a></li>
+                        <li><a href="#odul-mamasi">Ödül Maması</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ======================= ANA İÇERİK ======================= -->
+    <main class="site-main">
+        <div class="container">
+
+            <!-- --- KURU MAMA BÖLÜMÜ (15 KART) --- -->
+            <section id="kuru-mama" class="product-section">
+                <h2>Kuru Mama</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukedimaması1.png" alt="Hills Kedi Maması"></div>
+                        <div class="product-info">
+                            <div class="product-header"><span class="product-brand">Hills Science Plan</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                            <h3 class="product-title">Hills Kitten Ton Balıklı Yavru Kedi Maması</h3>
+                            <div class="product-variants">
+                                <button class="variant-tag active"data-price="₺658,90"><span class="weight">1+500 Gr Hediyeli</span><span class="price">₺658,90</span></button>
+                                <button class="variant-tag" data-price="₺2.171,17"><span class="weight">5+2 Kg Hediyeli</span><span class="price">₺2.171,17</span></button>
+                                <button class="variant-tag" data-price="₺672,90"><span class="weight">1,5Kg</span><span class="price">₺672,90</span></button>
+                                <button class="variant-tag" data-price="₺1.903,87"><span class="weight">7Kg</span><span class="price">₺1.903,87</span></button>
+                            </div>
+                        </div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺1.186,02</span><span class="new-price">₺658,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukedimaması2.png" alt="Ürün 2"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Felicia </span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Felicia Hypoallergenic Tavuklu Düşük Tahıllı Yavru Kedi Maması</h3>
+                        <div class="product-variants">
+                           <button class="variant-tag active" data-price="₺2.098,90"><span class="weight">12Kg</span><span class="price">₺2.098,90</span></button>
+                           <button class="variant-tag" data-price="₺179,90"><span class="weight">1Kg</span><span class="price">₺179,90</span></button>
+                           <button class="variant-tag" data-price="₺550,00"><span class="weight">2Kg</span><span class="price">₺550,00</span></button>
+                        </div>
+                    </div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺3.776,62</span><span class="new-price">₺2.098,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukedimaması3.png" alt="Ürün 3"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">La Vital</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Lavital Kitten Somonlu Yavru Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺1.471,90"><span class="weight">12Kg</span><span class="price">₺1.471,90</span></button>
+                            <button class="variant-tag" data-price="₺178,00"><span class="weight">1,5+500Gr Hediyeli</span><span class="price">₺178,00</span></button>
+                            <button class="variant-tag" data-price="₺303,90"><span class="weight">1,5Kg</span><span class="price">₺303,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺2.649,42</span><span class="new-price">₺1.471,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukedimaması4.png" alt="Ürün 4"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Best Pet</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div></div>
+                        <h3 class="product-title">Bestpet Tavuklu Yavru Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺1.846,18"><span class="weight">15Kg</span><span class="price">₺1.846,18</span></button>
+                             <button class="variant-tag" data-price="₺69,00"><span class="weight">400Gr</span><span class="price">₺69,00</span></button>
+                              <button class="variant-tag" data-price="₺265,90"><span class="weight">1Kg</span><span class="price">₺265,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺3.363,12</span><span class="new-price">₺1.846,18</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukedimaması5.png" alt="Ürün 5"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Acana</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Acana Kitten Hindi ve Somon Balıklı Yavru Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">1.8Kg</span><span class="price">₺1.988,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺3.580,02</span><span class="new-price">₺1.988,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkedimaması1.png" alt="Ürün 6"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Econature</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Econature Plus Tavuklu Yetişkin Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺1.319,90"><span class="weight">15Kg</span><span class="price">₺1.319,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺2.375,82</span><span class="new-price">₺1.319,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkedimaması2.png" alt="Ürün 7"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Pro Plan</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Pro Plan Delicate Kuzu Etli Yetişkin Kedi  Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺1.202,02"><span class="weight">3Kg</span><span class="price">₺1.202,02</span></button>
+                            <button class="variant-tag" data-price="₺3.381,39"><span class="weight">10Kg</span><span class="price">₺3.381,39</span></button>
+                            <button class="variant-tag" data-price="₺697,90"><span class="weight">1,5Kg</span><span class="price">₺697,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺2.163,64</span><span class="new-price">₺1.202,02</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkedimaması3.png" alt="Ürün 8"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Pronature</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Pronature Adult Tavuklu ve Pirinçli Yetişkin Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺204,90"><span class="weight">1,5Kg</span><span class="price">₺204,90</span></button>
+                            <button class="variant-tag" data-price="₺1.238,30"><span class="weight">10Kg</span><span class="price">₺1.238,30</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺368,82</span><span class="new-price">₺204,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkedimaması4.png" alt="Ürün 9"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Royal Canin</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div></div>
+                        <h3 class="product-title">Royal Canin Fit 32 Yetişkin Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺271,00"><span class="weight">400Gr</span><span class="price">₺271,00</span></button>
+                            <button class="variant-tag" data-price="₺927,40"><span class="weight">2Kg</span><span class="price">₺927,40</span></button>
+                            <button class="variant-tag" data-price="₺1.664,40"><span class="weight">4Kg</span><span class="price">₺1.664,40</span></button>
+                            <button class="variant-tag" data-price="₺3.668,90"><span class="weight">10Kg</span><span class="price">₺3.668,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%4 indirim</span><div class="price-stack"><span class="old-price">₺280,00</span><span class="new-price">₺271,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkedimaması5.png" alt="Ürün 10"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Advance</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Advance Sensitive Somonlu Hassas Yetişkin Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺1.246,90"><span class="weight">3Kg</span><span class="price">₺1.246,90</span></button>
+                            <button class="variant-tag" data-price="₺553,29"><span class="weight">1,5Kg</span><span class="price">₺553,29</span></button>
+                            <button class="variant-tag" data-price="₺3.578,90"><span class="weight">10Kg</span><span class="price">₺3.578,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺2.244,42</span><span class="new-price">₺1.246,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkedimama1.png" alt="Ürün 11"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Royal Canin</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Royal Canin İndoor 7+ Senior Yaşlı Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺694,68"><span class="weight">1.5Kg</span><span class="price">₺694,68</span></button>
+                             <button class="variant-tag" data-price="₺1.499,90"><span class="weight">3,5Kg</span><span class="price">₺1.499,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺1.258,42</span><span class="new-price">₺694,68</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkedimama2.png" alt="Ürün 12"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Pro Plan</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Pro Plan Sterilised 7+ Hindili Yaşlı Kısırlaştırılmış Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺1.199,90"><span class="weight">3Kg</span><span class="price">₺1.199,90</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺2.159,82</span><span class="new-price">₺1.199,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkedimama3.png" alt="Ürün 13"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Royal Canin</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Royal Canin Ageing +12 Yaşlı Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺997,40"><span class="weight">2Kg</span><span class="price">₺997,40</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺1.795,32</span><span class="new-price">₺997,40</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkedimama4.png" alt="Ürün 14"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Advance</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div></div>
+                        <h3 class="product-title">Advance Sterilised Senior +10 Yaş Kısırlaştırılmış Yaşlı Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺735,88"><span class="weight">1.5Kg</span><span class="price">₺735,88</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 indirim</span><div class="price-stack"><span class="old-price">₺1.324,58</span><span class="new-price">₺735,88</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkedimama5.png" alt="Ürün 15"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Brit Care</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Brit Care Senior Weight Control Düşük Kalorili Yaşlı Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺938,31"><span class="weight">2Kg</span><span class="price">₺938,31</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%20 indirim</span><div class="price-stack"><span class="old-price">₺1.688,96</span><span class="new-price">₺938,31</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- --- KONSERVE MAMA BÖLÜMÜ (15 KART) --- -->
+            <section id="konserve-mama" class="product-section">
+                <h2>Konserve Mama</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukonservemama1.png" alt="Konserve 1"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">PettzCats</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">PetzzCats Tavuk & Kalamar Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺45,00"><span class="weight">70gr</span><span class="price">₺45,00</span></button>
+                            <button class="variant-tag active" data-price="₺45,00"><span class="weight">1 Adet</span><span class="price">₺45,00</span></button>
+                            <button class="variant-tag" data-price="₺261,90"><span class="weight">6 Adet</span><span class="price">₺261,90</span></button>
+                            <button class="variant-tag" data-price="₺507,60"><span class="weight">12 Adet</span><span class="price">₺507,60</span></button>
+                            <button class="variant-tag" data-price="₺993,60"><span class="weight">24 Adet</span><span class="price">₺993,60</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%18 İndirim</span><div class="price-stack"><span class="old-price">₺55,00</span><span class="new-price">₺45,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                     <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukonservemama2.png" alt="Konserve 1"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">PettzCats</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">PetzzCats Ton Balığı Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺45,00"><span class="weight">70gr</span><span class="price">₺45,00</span></button>
+                            <button class="variant-tag active" data-price="₺45,00"><span class="weight">1 Adet</span><span class="price">₺45,00</span></button>
+                            <button class="variant-tag" data-price="₺261,90"><span class="weight">6 Adet</span><span class="price">₺261,90</span></button>
+                            <button class="variant-tag" data-price="₺507,60"><span class="weight">12 Adet</span><span class="price">₺507,60</span></button>
+                            <button class="variant-tag" data-price="₺993,60"><span class="weight">24 Adet</span><span class="price">₺993,60</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%18 İndirim</span><div class="price-stack"><span class="old-price">₺55,00</span><span class="new-price">₺45,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukonservemama3.png" alt="Konserve 3"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Reflex Plus</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Reflex Plus Pate Tavuk Etli Yavru Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="29,00"><span class="weight">85Gr</span><span class="price">₺29,00</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺48,00</span><span class="new-price">₺29,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukonservemama4.png" alt="Konserve 4"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Rokus</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Rokus Tavuklu Yavru Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">410Gr</span>
+                            <button class="variant-tag active" data-price="₺92,600"><span class="weight">1 Adet</span><span class="price">₺92,00</span></button>
+                             <button class="variant-tag" data-price="₺267,72"><span class="weight">6 Adet</span><span class="price">₺267,72</span></button>
+                            <button class="variant-tag" data-price="₺518,88"><span class="weight">12 Adet</span><span class="price">₺518,88</span></button>
+                            <button class="variant-tag" data-price="₺1.015,68"><span class="weight">24 Adet</span><span class="price">₺1.015,68</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%45 İndirim</span><div class="price-stack"><span class="old-price">₺168,00</span><span class="new-price">₺92,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yavrukonservemama5.png" alt="Konserve 5"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Schesir</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Schesir Baby Cat Tavuklu ve Somonlu Yavru Kedi Konservesi</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">70Gr</span>
+                            <button class="variant-tag active" data-price="₺206,00"><span class="weight">1 Adet</span><span class="price">₺206,00</span></button>
+                             <button class="variant-tag" data-price="₺599,46"><span class="weight">6 Adet</span><span class="price">₺599,46</span></button>
+                            <button class="variant-tag" data-price="₺1.161,84"><span class="weight">12 Adet</span><span class="price">₺1.161,84</span></button>
+                            <button class="variant-tag" data-price="₺2.274,24"><span class="weight">24 Adet</span><span class="price">₺2.274,24</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%39 İndirim</span><div class="price-stack"><span class="old-price">₺340,00</span><span class="new-price">₺206,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkonservemama1.png" alt="Konserve 6"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">PettzCats</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">PetzzCats Ton Balığı & Karides Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">70Gr</span>
+                            <button class="variant-tag active" data-price="₺45,00"><span class="weight">1 Adet</span><span class="price">₺45,00</span></button>
+                            <button class="variant-tag" data-price="₺261,90"><span class="weight">6 Adet</span><span class="price">₺261,90</span></button>
+                            <button class="variant-tag" data-price="₺507,60"><span class="weight">12 Adet</span><span class="price">₺507,60</span></button>
+                            <button class="variant-tag" data-price="₺993,60"><span class="weight">24 Adet</span><span class="price">₺993,60</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%18 İndirim</span><div class="price-stack"><span class="old-price">₺55,00</span><span class="new-price">₺45,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkonservemama2.png" alt="Konserve 7"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Pro Plan</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Pro Plan Adult Tavuklu Yetişkin Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                             <button class="variant-tag active"><span class="weight">85Gr</span>
+                            <button class="variant-tag active" data-price="₺96,00"><span class="weight">1 Adet</span><span class="price">₺96,00</span></button>
+                            <button class="variant-tag" data-price="₺279,36"><span class="weight">6 Adet</span><span class="price">₺279,36</span></button>
+                            <button class="variant-tag" data-price="₺541,44"><span class="weight">12 Adet</span><span class="price">₺541,44</span></button>
+                            <button class="variant-tag" data-price="₺1.059,84"><span class="weight">24 Adet</span><span class="price">₺1.059,84</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%41 İndirim</span><div class="price-stack"><span class="old-price">₺164,00</span><span class="new-price">₺96,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkonservemama3.png" alt="Konserve 8"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Crocus</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Crocus Dana Etli Yetişkin Kedi Yaş Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">400Gr</span>
+                            <button class="variant-tag active" data-price="₺50,00"><span class="weight">1 Adet</span><span class="price">₺50,00</span></button>
+                            <button class="variant-tag" data-price="₺291,00"><span class="weight">6 Adet</span><span class="price">₺291,00</span></button>
+                            <button class="variant-tag" data-price="₺564,00"><span class="weight">12 Adet</span><span class="price">₺564,00</span></button>
+                            <button class="variant-tag" data-price="₺1.104,00"><span class="weight">24 Adet</span><span class="price">₺1.104,00</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺90,00</span><span class="new-price">₺50,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkonservemama4.png" alt="Konserve 9"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Chefs Choice</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Chefs Choice Somonlu ve Balkabaklı Tahılsız Ezme Yetişkin Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                             <button class="variant-tag active"><span class="weight">400Gr</span>
+                            <button class="variant-tag active" data-price="₺94,00"><span class="weight">1 Adet</span><span class="price">₺94,00</span></button>
+                            <button class="variant-tag" data-price="₺547,08"><span class="weight">6 Adet</span><span class="price">₺547,08</span></button>
+                            <button class="variant-tag" data-price="₺1.060,32"><span class="weight">12 Adet</span><span class="price">₺1.060,32</span></button>
+                            <button class="variant-tag" data-price="₺2.075,52"><span class="weight">24 Adet</span><span class="price">₺2.075,52</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%41 İndirim</span><div class="price-stack"><span class="old-price">₺160,00</span><span class="new-price">₺94,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yetişkinkonservemama5.png" alt="Konserve 10"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Best Pet</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Bestpet Gurme Jöleli Somonlu Kısırlaştırılmış Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">85Gr</span>
+                            <button class="variant-tag active" data-price="₺40,00"><span class="weight">1 Adet</span><span class="price">₺40,00</span></button>
+                            <button class="variant-tag" data-price="₺232,80"><span class="weight">6 Adet</span><span class="price">₺232,80</span></button>
+                            <button class="variant-tag" data-price="₺451,20"><span class="weight">12 Adet</span><span class="price">₺451,20</span></button>
+                            <button class="variant-tag" data-price="₺883,20"><span class="weight">24 Adet</span><span class="price">₺883,20</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺72,00</span><span class="new-price">₺40,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkonservemama1.png" alt="Konserve 11"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Royal Canin</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Royal Canin Ageing +12 Gravy Pouch Yaşlı Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">85Gr</span>
+                            <button class="variant-tag active" data-price="₺56,00"><span class="weight">1 Adet</span><span class="price">₺56,00</span></button>
+                            <button class="variant-tag" data-price="₺325,92"><span class="weight">6 Adet</span><span class="price">₺325,92</span></button>
+                            <button class="variant-tag" data-price="₺631,68"><span class="weight">12 Adet</span><span class="price">₺631,68</span></button>
+                            <button class="variant-tag" data-price="₺1.236,48"><span class="weight">24 Adet</span><span class="price">₺1.236,48</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%20 İndirim</span><div class="price-stack"><span class="old-price">₺70,00</span><span class="new-price">₺56,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkonservemama2.png" alt="Konserve 12"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Me-o</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Meo Delite Ton Balıklı ve Tavuklu Pouch Yaşlı Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">70Gr</span>
+                            <button class="variant-tag active" data-price="₺62,00"><span class="weight">1 Adet</span><span class="price">₺62,00</span></button>
+                            <button class="variant-tag" data-price="₺360,84"><span class="weight">6 Adet</span><span class="price">₺360,84</span></button>
+                            <button class="variant-tag" data-price="₺699,36"><span class="weight">12 Adet</span><span class="price">₺699,36</span></button>
+                            <button class="variant-tag" data-price="₺1.368,96"><span class="weight">24 Adet</span><span class="price">₺1.368,96</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%46 İndirim</span><div class="price-stack"><span class="old-price">₺114,00</span><span class="new-price">₺62,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkonservemama3.png" alt="Konserve 13"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">PettzCats</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">PetzzCats Ton Balığı & Midye Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active">
+                            <button class="variant-tag active"><span class="weight">70Gr</span>
+                            <button class="variant-tag active" data-price="₺45,00"><span class="weight">1 Adet</span><span class="price">₺45,00</span></button>
+                            <button class="variant-tag" data-price="₺261,90"><span class="weight">6 Adet</span><span class="price">₺261,90</span></button>
+                            <button class="variant-tag" data-price="₺507,60"><span class="weight">12 Adet</span><span class="price">₺507,60</span></button>
+                            <button class="variant-tag" data-price="₺993,60"><span class="weight">24 Adet</span><span class="price">₺993,60</span></button>
+                            </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%18 İndirim</span><div class="price-stack"><span class="old-price">₺55,00</span><span class="new-price">₺45,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkonservemama4.png" alt="Konserve 14"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Animonda</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Animonda Vom Feinsten Senior Kümes Hayvanlı Yaşlı Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">100Gr</span>
+                            <button class="variant-tag active" data-price="75,00"><span class="weight">1 Adet</span><span class="price">₺75,00</span></button>
+                            <button class="variant-tag" data-price="₺436,50"><span class="weight">6 Adet</span><span class="price">₺436,50</span></button>
+                            <button class="variant-tag" data-price="₺864,00"><span class="weight">12 Adet</span><span class="price">₺864,00</span></button>
+                            <button class="variant-tag" data-price="₺1.656,00"><span class="weight">24 Adet</span><span class="price">₺1.656,00</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%41 İndirim</span><div class="price-stack"><span class="old-price">₺128,00</span><span class="new-price">₺75,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/yaşlıkonservemama5.png" alt="Konserve 15"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Pro Plan</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Pro Plan Adult 7+ Kıyılmış Ton Balıklı Yaşlı Konserve Kedi Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">85Gr</span>
+                            <button class="variant-tag active" data-price="₺32,00"><span class="weight">1 Adet</span><span class="price">₺32,00</span></button>
+                            <button class="variant-tag" data-price="₺186,24"><span class="weight">6 Adet</span><span class="price">₺186,24</span></button>
+                            <button class="variant-tag" data-price="₺360,96"><span class="weight">12 Adet</span><span class="price">₺360,96</span></button>
+                            <button class="variant-tag" data-price="₺706,56"><span class="weight">24 Adet</span><span class="price">₺706,56</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%47 İndirim</span><div class="price-stack"><span class="old-price">₺60,00</span><span class="new-price">₺32,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- --- ÖDÜL MAMASI BÖLÜMÜ (15 KART) --- -->
+            <section id="odul-mamasi" class="product-section">
+                <h2>Ödül Maması</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülmama1.png" alt="Ödül 1"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Inaba</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Inaba Ciao Churu Rolls Sticks Tavuk Sargılı Deniz Taraklı ve Ton Balıklı Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                             <button class="variant-tag active"><span class="weight">10Gr</span>
+                            <button class="variant-tag active" data-price="₺152,00"><span class="weight">1 Adet</span><span class="price">₺152,00</span></button>
+                            <button class="variant-tag" data-price="₺884,64"><span class="weight">6 Adet</span><span class="price">₺884,64</span></button>
+                            <button class="variant-tag" data-price="₺1.714,56"><span class="weight">12 Adet</span><span class="price">₺1.714,56</span></button>
+                            <button class="variant-tag" data-price="₺3.356,16"><span class="weight">24 Adet</span><span class="price">₺3.356,16</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%45 İndirim</span><div class="price-stack"><span class="old-price">₺274,00</span><span class="new-price">₺152,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülmama2.png" alt="Ödül 2"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Flamingo</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Flamingo Tavuklu Naturel Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">85Gr</span>
+                            <button class="variant-tag active" data-price="₺215,00"><span class="weight">1 Adet</span><span class="price">₺215,00</span></button>
+                            <button class="variant-tag" data-price="₺1.251,30"><span class="weight">6 Adet</span><span class="price">₺1.251,30</span></button>
+                            <button class="variant-tag" data-price="₺2.425,20"><span class="weight">12 Adet</span><span class="price">₺2.425,20</span></button>
+                            <button class="variant-tag" data-price="₺4.747,20"><span class="weight">24 Adet</span><span class="price">₺4.747,20</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%41 İndirim</span><div class="price-stack"><span class="old-price">₺365,00</span><span class="new-price">₺215,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülmama3.png" alt="Ödül 3"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Brit Care</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Brit Care Snack Urinary İdrar Sağlığı Destekleyici Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">50Gr</span>
+                            <button class="variant-tag active" data-price="₺128,00"><span class="weight">1 Adet</span><span class="price">₺128,00</span></button>
+                            <button class="variant-tag" data-price="₺744,96"><span class="weight">6 Adet</span><span class="price">₺744,96</span></button>
+                            <button class="variant-tag" data-price="₺1.443,84"><span class="weight">12 Adet</span><span class="price">₺1.443,84</span></button>
+                            <button class="variant-tag" data-price="₺2.826,24"><span class="weight">24 Adet</span><span class="price">₺2.826,24</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%41 İndirim</span><div class="price-stack"><span class="old-price">₺217,00</span><span class="new-price">₺128,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülmama4.png" alt="Ödül 4"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Inaba</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Inaba Juicy Bites Balıklı ve İstiridyeli Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">11,3Gr</span>
+                            <button class="variant-tag active" data-price="₺152,00"><span class="weight">1 Adet</span><span class="price">₺152,00</span></button>
+                            <button class="variant-tag" data-price="₺884,64"><span class="weight">6 Adet</span><span class="price">₺884,64</span></button>
+                            <button class="variant-tag" data-price="₺1.714,56"><span class="weight">12 Adet</span><span class="price">₺1.714,56</span></button>
+                            <button class="variant-tag" data-price="₺3.356,16"><span class="weight">24 Adet</span><span class="price">₺3.356,16</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%45 İndirim</span><div class="price-stack"><span class="old-price">₺274,00</span><span class="new-price">₺152,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülmama5.png" alt="Ödül 5"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Armonia</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Carny Meat Tavuk ve Sığır Eti Yetişkin Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">50Gr</span>
+                            <button class="variant-tag active" data-price="₺143,00"><span class="weight">1 Adet</span><span class="price">₺143,00</span></button>
+                            <button class="variant-tag" data-price="₺832,26"><span class="weight">6 Adet</span><span class="price">₺832,26</span></button>
+                            <button class="variant-tag" data-price="₺1.613,04"><span class="weight">12 Adet</span><span class="price">₺1.613,04</span></button>
+                            <button class="variant-tag" data-price="₺3.157,44"><span class="weight">24 Adet</span><span class="price">₺3.157,44</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%41 İndirim</span><div class="price-stack"><span class="old-price">₺243,00</span><span class="new-price">₺143,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülbisküvisi1.jpeg.png" alt="Ödül 6"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Gimcat</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Nutri Pockets Somon Balıklı Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">60Gr</span>
+                            <button class="variant-tag active" data-price="₺146,89"><span class="weight">1 Adet</span><span class="price">₺146,89</span></button>
+                            <button class="variant-tag" data-price="₺494,06"><span class="weight">6 Adet</span><span class="price">₺494,06</span></button>
+                            <button class="variant-tag" data-price="₺957,56"><span class="weight">12 Adet</span><span class="price">₺957,56</span></button>
+                            <button class="variant-tag" data-price="₺1.874,37"><span class="weight">24 Adet</span><span class="price">₺1.874,37</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%45 İndirim</span><div class="price-stack"><span class="old-price">₺264,80</span><span class="new-price">₺146,89</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülbisküvisi2.png" alt="Ödül 7"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Gimcat</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Gimcat Multivitamin Kedi Tableti</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">40Gr</span>
+                            <button class="variant-tag active" data-price="₺104,90"><span class="weight">1 Adet</span><span class="price">₺104,90</span></button>
+                            <button class="variant-tag" data-price="₺610,52"><span class="weight">6 Adet</span><span class="price">₺610,52</span></button>
+                            <button class="variant-tag" data-price="₺1.183,27"><span class="weight">12 Adet</span><span class="price">₺1.183,27</span></button>
+                            <button class="variant-tag" data-price="₺2.316,19"><span class="weight">24 Adet</span><span class="price">₺2.316,19</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺188,82</span><span class="new-price">₺104,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülbisküvisi3.png" alt="Ödül 8"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Garden Mix</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Garden Mix Tavuklu İçi Dolgulu Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">60Gr</span>
+                            <button class="variant-tag active" data-price="₺36,00"><span class="weight">1 Adet</span><span class="price">₺36,00</span></button>
+                            <button class="variant-tag" data-price="₺209,52"><span class="weight">6 Adet</span><span class="price">₺209,52</span></button>
+                            <button class="variant-tag" data-price="₺406,08"><span class="weight">12 Adet</span><span class="price">₺406,08</span></button>
+                            <button class="variant-tag" data-price="₺794,88"><span class="weight">24 Adet</span><span class="price">₺794,88</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%45 İndirim</span><div class="price-stack"><span class="old-price">₺66,00</span><span class="new-price">₺36,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülbisküvisi4.png" alt="Ödül 9"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Gimcat</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Gimcat Nutri Pockets Country Mix Multivitaminli Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">150Gr</span>
+                            <button class="variant-tag active" data-price="₺159,81"><span class="weight">1 Adet</span><span class="price">₺159,81</span></button>
+                            <button class="variant-tag" data-price="₺930,09"><span class="weight">6 Adet</span><span class="price">₺930,09</span></button>
+                            <button class="variant-tag" data-price="₺1.082,66"><span class="weight">12 Adet</span><span class="price">₺1.082,66</span></button>
+                            <button class="variant-tag" data-price="₺3.528,60"><span class="weight">24 Adet</span><span class="price">₺3.528,60</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺287,66</span><span class="new-price">₺159,81</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülbisküvisi5.png" alt="Ödül 10"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Ranova</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Ranova Karışık Lezzetli Lolipop Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                             <button class="variant-tag active"><span class="weight">1,4Gr</span>
+                            <button class="variant-tag active" data-price="₺155,00"><span class="weight">5 Adet</span><span class="price">₺155,00</span></button>
+                            <button class="variant-tag" data-price="₺386,00"><span class="weight">15 Adet</span><span class="price">₺386,00</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%40 İndirim</span><div class="price-stack"><span class="old-price">₺260,00</span><span class="new-price">₺155,00</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülsticks1.png" alt="Ödül 11"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Gimcat</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Gimcat Sticks Kitten Hindili Kedi Ödül Çubuğu</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">3 Adet - 3Gr</span>
+                            <button class="variant-tag active" data-price="₺80,09"><span class="weight">1 Adet</span><span class="price">₺80,09</span></button>
+                            <button class="variant-tag" data-price="₺466,12"><span class="weight">6 Adet</span><span class="price">₺466,12</span></button>
+                            <button class="variant-tag" data-price="₺903,42"><span class="weight">12 Adet</span><span class="price">₺903,42</span></button>
+                            <button class="variant-tag" data-price="₺1.768,39"><span class="weight">24 Adet</span><span class="price">₺1.768,39</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺144,16</span><span class="new-price">₺80,09</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülsticks2.png" alt="Ödül 12"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Gimcat</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Gimcat Sticks Kümes Hayvanlı Kedi Ödül Çubuğu</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active"><span class="weight">4 Adet - 20Gr</span>
+                            <button class="variant-tag active" data-price="₺74,90"><span class="weight">1 Adet</span><span class="price">₺74,90</span></button>
+                            <button class="variant-tag" data-price="₺453,92"><span class="weight">6 Adet</span><span class="price">₺453,92</span></button>
+                            <button class="variant-tag" data-price="₺844,97"><span class="weight">12 Adet</span><span class="price">₺844,97</span></button>
+                            <button class="variant-tag" data-price="₺1.635,79"><span class="weight">24 Adet</span><span class="price">₺1.635,79</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺134,82</span><span class="new-price">₺74,90</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülsticks3.png" alt="Ödül 13"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Reflex</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Reflex Hindi ve Kuzulu Stick Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                             <button class="variant-tag active" data-price="₺37,40"><span class="weight">3x5Gr</span><span class="price">₺37,40</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺67,32</span><span class="new-price">₺37,40</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülsticks4.png" alt="Ödül 14"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Reflex</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div>
+                        <h3 class="product-title">Reflex Biftekli ve Kuzu Etli Stick Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-tag active" data-price="₺37,40"><span class="weight">3x5Gr</span><span class="price">₺37,40</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺67,32</span><span class="new-price">₺37,40</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="card-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                        <div class="product-image-container"><img src="kediurunimg/kediödülsticks5.png" alt="Ödül 15"></div>
+                        <div class="product-info"><div class="product-header"><span class="product-brand">Reflex Plus</span><div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div></div>
+                        <h3 class="product-title">Reflex Plus Mini Mix Karışık Lezzetler Stick Kedi Ödül Maması</h3>
+                        <div class="product-variants">
+                             <button class="variant-tag active"><span class="weight">400Gr</span>
+                            <button class="variant-tag active" data-price="₺282,07"><span class="weight">1 Adet</span><span class="price">₺282,07</span></button>
+                            <button class="variant-tag" data-price="₺1.641,65"><span class="weight">6 Adet</span><span class="price">₺1.641,65</span></button>
+                            <button class="variant-tag" data-price="₺3.181,75"><span class="weight">12 Adet</span><span class="price">₺3.181,75</span></button>
+                            <button class="variant-tag" data-price="₺6.228,11"><span class="weight">24 Adet</span><span class="price">₺6.228,11</span></button>
+                        </div></div>
+                        <div class="product-price-bar"><span class="discount-badge">%44 İndirim</span><div class="price-stack"><span class="old-price">₺507,73</span><span class="new-price">₺282,07</span></div></div>
+                        <div class="product-actions"><div class="quantity-selector"><button>-</button><input type="text" value="1" readonly><button>+</button></div><button class="add-to-cart">Sepete Ekle <i class="fa-solid fa-cart-plus"></i></button></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+  <footer>
+        <div class="container footer-grid">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Kedi Ürünleri</h4>
+                    <ul>
+                        <li><a href="kedimama.html#kuru-mama">Kuru Mama</a></li>
+                        <li><a href="kedimama.html#konserve-mama">Konserve Mama</a></li>
+                        <li><a href="kedikum.html">Kedi Kumu</a></li>
+                        <li><a href="keditasma.html">Oyuncaklar</a></li>
+                        <li><a href="kediurunleri.html">Tüm Kedi Ürünleri &raquo;</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Köpek Ürünleri</h4>
+                    <ul>
+                        <li><a href="kopekmama.html#kuru-mama">Kuru Mama</a></li>
+                        <li><a href="kopekmama.html#konserve-mama">Konserve Mama</a></li>
+                        <li><a href="kopektasma.html">Tasmalar</a></li>
+                        <li><a href="kopekoyuncak.html">Oyuncaklar</a></li>
+                        <li><a href="kopekurunleri.html">Tüm Köpek Ürünleri &raquo;</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Petify</h4>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="gizlilikpolitikası.html">Gizlilik Politikası</a></li>
+                        <li><a href="iadesartları.html">İade Şartları</a></li>
+                    </ul>
+                </div>
+            </div>
+           <div class="footer-social">
+    <h3>Sosyal Medyadan Bizi Takip Edin!</h3>
+    
+    <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <div class="whatsapp-container">
+        <i class="fa-brands fa-whatsapp"></i>
+        <p>WhatsApp kanalımıza Buradan katılabilirsiniz!</p>
+    </div>
+
+    <div class="qr-code">
+        <img src="img/qr.png" alt="qr" style="width:100%; height:100%; object-fit:contain;">
+    </div>
+</div>
+            </div>
+        </div> 
+        <p class="copyright-text">&copy; 2025 Petify. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="kedimamaj.js"></script>
+</body>
+</html>

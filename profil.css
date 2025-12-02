@@ -1,0 +1,433 @@
+/* =========================================
+   1. GENEL AYARLAR & DEĞİŞKENLER (Anasayfadan)
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-orange: #FFB36B; /* Anasayfa rengine güncellendi */
+    --bg-peach: #FFEAD9;
+    --footer-bg: #222222;
+    --footer-social-bg: #FCA94E;
+    --text-dark: #333;
+    --text-light: #FFF;
+    --button-orange: #F97316;
+    --card-bg-light: #f8e2d0;  /* Profil kartları için */
+    --main-width: 1200px;
+}
+
+body {
+    background-color: #f8e2d0; /* Yeni istediğin renk */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px; 
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+    max-width: var(--main-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =========================================
+   2. HEADER & NAVİGASYON (Anasayfa Kodu)
+   ========================================= */
+header {
+    background-color: var(--primary-orange);
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; left: 0; width: 100%;     
+    z-index: 1000;   
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.petify-logo { height: 50px; width: auto; object-fit: contain; }
+
+/* Navigasyon */
+nav { display: flex; gap: 20px; height: 100%; align-items: center; }
+.nav-item { position: static; height: 100%; display: flex; align-items: center; cursor: pointer; }
+.nav-link {
+    text-decoration: none; color: #333;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px; font-weight: 600;
+    padding: 0 10px; height: 100%;
+    display: flex; align-items: center; transition: color 0.3s;
+}
+.nav-link:hover { color: #fff; }
+
+/* Mega Menü */
+.mega-menu {
+    display: none; position: absolute; top: 80px; left: 50%;
+    transform: translateX(-50%); width: 100%; max-width: 1200px;
+    background-color: #FFFFFF; border-radius: 0 0 10px 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); padding: 40px;
+    z-index: 999; border-top: 4px solid #fff; cursor: default;
+}
+.nav-item:hover .mega-menu {
+    display: flex; justify-content: space-between; gap: 20px;
+    animation: slideDown 0.3s ease forwards;
+}
+@keyframes slideDown {
+    from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.menu-column { flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+.menu-column h3 { font-size: 16px; color: #222; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; width: 100%; font-weight: 700; }
+.submenu-group { margin-bottom: 20px; width: 100%; }
+.submenu-group h4 { color: var(--primary-orange); font-size: 15px; margin-bottom: 8px; font-weight: 600; }
+.submenu-group a { display: block; font-size: 13px; color: #666; margin-bottom: 5px; transition: all 0.2s ease; }
+.submenu-group a:hover { color: var(--primary-orange); padding-left: 5px; }
+
+/* Header Sağ Kısım */
+.header-actions { display: flex; align-items: center; gap: 20px; }
+.search-box { position: relative; }
+.search-box input { width: 200px; padding: 8px 35px 8px 10px; border: none; border-radius: 4px; outline: none; }
+.search-box i { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #999; font-size: 14px; }
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.icons a {
+    text-decoration: none; 	
+    color: #000; 		
+    font-size: 20px; 		
+    transition: all 0.3s ease; 	
+    display: flex; 		
+    align-items: center;
+}
+
+.icons a:hover {
+    color: #FFFFFF; 		
+    transform: scale(1.1); 		
+}
+
+.profile-container { 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    cursor: pointer;
+    /* Header (1000) üzerinde olması için */
+    z-index: 1002; 
+}
+
+/* Profil İkon Linki (Tıklanabilir alan) */
+.profile-icon-link {
+    color: #333;
+    font-size: 20px; 
+    transition: color 0.3s ease;
+    display: flex; 
+    padding: 10px; /* Tıklama alanını genişletir */
+}
+
+.profile-container:hover .profile-icon-link {
+    color: #fff;
+}
+
+/* 2. Açılır Menü (Gizleme ve Konumlandırma) */
+.dropdown-menu {
+    position: absolute; /* Havada asılı kalır */
+    top: 100%;          /* Header'ın tam altından başlar */
+    right: 0;           /* Sağ kenara hizala */
+    width: 220px; 
+    background-color: #fff;
+    border-radius: 10px; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2); 
+    padding: 15px;
+    border: 1px solid #f0f0f0; 
+    
+    /* GİZLEME KURALLARI */
+    opacity: 0; 
+    visibility: hidden; /* Mutlak gizleme */
+    transform: translateY(10px); /* Aşağı kayma animasyonu */
+    transition: all 0.3s ease;
+    z-index: 9999; /* En üstte kalması için yeterince yüksek z-index */
+}
+
+/* 3. Ok (Üçgen) Stili */
+.dropdown-menu::before {
+    content: ''; 
+    position: absolute; 
+    top: -6px; 
+    right: 12px; 
+    width: 12px; 
+    height: 12px;
+    background-color: #fff; 
+    transform: rotate(45deg); 
+    border-left: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+}
+
+/* 4. Hover Durumu (Görünür Yap) */
+.profile-container:hover .dropdown-menu { 
+    opacity: 1; 
+    visibility: visible; 
+    transform: translateY(0);
+}
+
+/* 4. Menü İçeriği Stilleri */
+.welcome-msg { 
+    font-size: 0.85rem; 
+    color: #666; 
+    text-align: center; 
+    margin-bottom: 10px; 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #eee; 
+    font-weight: 600; 
+}
+.action-buttons { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+.action-buttons .btn {
+    padding: 8px 10px; 
+    border-radius: 6px; 
+    font-size: 0.9rem; 
+    font-weight: 600; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px;
+    /* Renkler için var(--primary-orange) kullanılır */
+}
+.login { 
+    background-color: var(--primary-orange); 
+    color: #fff; 
+    border: 1px solid var(--primary-orange); 
+}
+.login:hover { 
+    background-color: #e08e54; 
+}
+.register { 
+    background-color: transparent; 
+    color: var(--primary-orange); 
+    border: 1px solid var(--primary-orange); 
+}
+.register:hover { 
+    background-color: var(--primary-orange); 
+    color: #fff; 
+    box-shadow: 0 2px 5px rgba(255, 179, 107, 0.4); 
+}
+
+/* =========================================
+   3. PROFİL SAYFASI ÖZEL STİLLERİ
+   ========================================= */
+.profile-main {
+    padding: 20px;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.temsili-yazi {
+    text-align: center;     
+    color: #777;             
+    font-style: italic;       
+    font-size: 0.9rem;        
+    margin-top: 10px;       
+    margin-bottom: 10px;    
+    font-weight: 500;
+}
+
+/* Sol Sidebar */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo img {
+    width: 180px; height: 180px;
+    border-radius: 50%; object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.user-inputs { width: 100%; display: flex; flex-direction: column; gap: 15px; }
+.user-inputs input, .user-inputs textarea {
+    width: 100%; padding: 12px;
+    border-radius: 10px; border: 1px solid #eee; /* Hafif gri border, anasayfayla uyumlu olsun diye değiştirdim */
+    background-color: #f9f9f9;
+    color: #333; font-weight: bold; resize: none;
+}
+.user-inputs textarea { height: 100px; }
+
+/* Sağ İçerik Alanı */
+.content-area { flex: 3; }
+.dashboard-grid { display: flex; gap: 20px; margin-bottom: 30px; }
+.info-card {
+    flex: 1; background-color: var(--card-bg-light);
+    padding: 20px; border-radius: 15px;
+}
+.info-card h3 {
+    text-align: center; margin-bottom: 15px;
+    font-family: 'Playfair Display', serif; /* Anasayfa fontuyla güncelledim */
+}
+.info-card ul li {
+    padding: 12px 10px; /* Biraz boşluk verelim */
+    font-weight: 600; 
+    color: #333;
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; /* İkon ve yazı arası boşluk */
+    border-radius: 8px; /* Köşeleri yumuşat */
+    
+    /* HAREKET İÇİN GEÇİŞ AYARI (Animasyonun hızı) */
+    transition: all 0.3s ease; 
+}
+
+/* İkonun Kendisi */
+.info-card ul li i { 
+    color: #000; /* Normalde Siyah */
+    font-size: 1.2rem;
+    width: 25px; 
+    transition: all 0.3s ease; /* İkon da yumuşak değişsin */
+}
+
+.info-card ul li:hover { 
+    transform: translateX(10px); /* 10 piksel sağa kaydır */
+    background-color: #fff;      /* Arka planı beyaz yap */
+    color: #F97316;              /* Yazıyı Turuncu yap */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Hafif gölge ekle */
+}
+
+/* 2. İkon Büyüsün ve Rengi Değişsin */
+.info-card ul li:hover i {
+    color: #F97316;       /* İkon Turuncu olsun */
+    transform: scale(1.2); /* İkon %20 büyüsün */
+}
+
+/* Siparişler */
+.orders-section {
+    background-color: var(--card-bg-light);
+    padding: 20px; border-radius: 15px;
+}
+.orders-section h3 {
+    text-align: center; margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.order-card {
+    background-color: #fff;
+    border: 2px solid var(--primary-orange);
+    border-radius: 10px; margin-bottom: 20px; overflow: hidden;
+}
+.order-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px; border-bottom: 2px solid var(--primary-orange);
+    background-color: #fff;
+}
+.order-header strong { display: block; font-size: 0.9rem; margin-bottom: 5px; }
+.order-header p { font-size: 0.9rem; color: #555; }
+
+/* BUTON STİLİ (İstediğin Hover Efekti) */
+.btn-detail {
+    background-color: var(--primary-orange);
+    color: #fff; /* Başlangıçta beyaz yazı */
+    font-weight: bold;
+    border: 2px solid var(--primary-orange);
+    padding: 8px 20px; border-radius: 5px;
+    cursor: pointer; transition: all 0.3s ease;
+}
+.btn-detail:hover {
+    background-color: #fff;         /* Arka plan beyaz */
+    color: var(--button-orange);    /* Yazı turuncu */
+    border-color: var(--button-orange);
+}
+
+.order-body { padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+.status { display: flex; align-items: center; gap: 10px; color: #28a745; }
+.status i { font-size: 1.5rem; }
+.product-thumbs { display: flex; gap: 10px; }
+.thumb { width: 50px; height: 50px; background-color: #ccc; border-radius: 5px; }
+
+/* =========================================
+   4. FOOTER (Anasayfa Kodu)
+   ========================================= */
+footer {
+    background-color: var(--footer-bg); 
+    color: var(--text-light);
+    padding: 4rem 0 0 0; margin-top: auto;
+}
+.footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;
+    max-width: 1200px; margin: 0 auto; padding: 0 20px 3rem 20px;
+    border-bottom: 1px solid #444; align-items: start;
+}
+.footer-links { display: flex; justify-content: space-between; gap: 2rem; }
+.footer-column { flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+.footer-column h4 {
+    font-size: 1.1rem; font-weight: 700; color: var(--text-light);
+    margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;
+}
+.footer-column h4::after { content: ''; display: block; width: 30px; height: 2px; background-color: var(--primary-orange); margin-top: 8px; }
+.footer-column ul li { margin-bottom: 10px; }
+.footer-column ul li a { font-size: 0.95rem; color: #B0B0B0; transition: all 0.3s ease; position: relative; }
+.footer-column ul li a:hover { color: var(--primary-orange); padding-left: 10px; }
+.footer-column ul li a::before {
+    content: '›'; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    opacity: 0; color: var(--primary-orange); transition: all 0.3s ease; font-size: 1.2rem;
+}
+.footer-column ul li a:hover::before { opacity: 1; left: -15px; }
+
+/* Footer Sosyal */
+.footer-social {
+    background-color: #FCA94E; color: #222; padding: 2.5rem 2rem;
+    border-radius: 20px; text-align: center; display: flex; flex-direction: column;
+    align-items: center; box-shadow: 0 10px 30px rgba(252, 169, 78, 0.3);
+}
+.footer-social h3 { font-size: 1.4rem; margin-bottom: 1.5rem; font-weight: 700; color: #fff; }
+.social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+.social-icons a {
+    color: #FFF; background-color: rgba(255, 255, 255, 0.25);
+    width: 45px; height: 45px; font-size: 1.3rem; display: flex;
+    align-items: center; justify-content: center; border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.social-icons a:hover { background-color: #FFF; color: #FCA94E; transform: translateY(-5px) scale(1.1); }
+.whatsapp-container {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-bottom: 1.5rem; background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px; border-radius: 50px; transition: background-color 0.3s ease; cursor: pointer;
+}
+.whatsapp-container:hover { background-color: rgba(255, 255, 255, 0.25); }
+.whatsapp-container i { font-size: 1.8rem; color: #fff; }
+.whatsapp-container p { margin: 0; font-size: 0.95rem; color: #fff; font-weight: 600; }
+.qr-code { width: 140px; height: 140px; background-color: #FFF; padding: 8px; border-radius: 12px; display: flex; justify-content: center; align-items: center; }
+.copyright-text { text-align: center; padding: 1.5rem; background-color: #1a1a1a; font-size: 0.8rem; color: #666; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .main-card { flex-direction: column; padding: 20px; }
+    .dashboard-grid { flex-direction: column; }
+    .order-header { flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .order-body { flex-direction: column; align-items: flex-start; gap: 15px; }
+}

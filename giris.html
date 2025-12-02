@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PETIFY - Giriş</title>
+  <link rel="stylesheet" href="giris.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <main class="main-content">
+    <div class="logo-section">
+      <img src="img/petify.png" alt="Petify Logo" class="logo">
+      <p class="welcome-text">“PETIFY” e hoş geldin! Hesabını oluştur ve aramıza katıl.</p>
+    </div>
+
+    <div class="login-box">
+      <div class="tab-buttons">
+        <button class="active">Giriş</button>
+        <button onclick="window.location.href='kayit.html'">Kayıt</button>
+      </div>
+
+      <form>
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Şifre*</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="window.location.href='anasayfa.html'">Giriş Yap</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+        <div class="container footer-grid">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Kedi Ürünleri</h4>
+                    <ul>
+                        <li><a href="kedimama.html#kuru-mama">Kuru Mama</a></li>
+                        <li><a href="kedimama.html#konserve-mama">Konserve Mama</a></li>
+                        <li><a href="kedikum.html">Kedi Kumu</a></li>
+                        <li><a href="keditasma.html">Oyuncaklar</a></li>
+                        <li><a href="kediurunleri.html">Tüm Kedi Ürünleri &raquo;</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Köpek Ürünleri</h4>
+                    <ul>
+                        <li><a href="kopekmama.html#kuru-mama">Kuru Mama</a></li>
+                        <li><a href="kopekmama.html#konserve-mama">Konserve Mama</a></li>
+                        <li><a href="kopektasma.html">Tasmalar</a></li>
+                        <li><a href="kopekoyuncak.html">Oyuncaklar</a></li>
+                        <li><a href="kopekurunleri.html">Tüm Köpek Ürünleri &raquo;</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Petify</h4>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="gizlilikpolitikası.html">Gizlilik Politikası</a></li>
+                        <li><a href="iadesartları.html">İade Şartları</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Sosyal Medyadan Bizi Takip Edin!</h3>
+                
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <div class="whatsapp-container">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>WhatsApp kanalımıza Buradan katılabilirsiniz!</p>
+                </div>
+
+                <div class="qr-code">
+                    <img src="img/qr.png" alt="qr" style="width:100%; height:100%; object-fit:contain;">
+                </div>
+            </div>
+        </div> 
+        <p class="copyright-text">&copy; 2025 Petify. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>

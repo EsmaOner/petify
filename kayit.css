@@ -1,0 +1,344 @@
+/* =========================================
+   1. GENEL AYARLAR & DEĞİŞKENLER
+   ========================================= */
+:root {
+    --primary-orange: #FFB36B;
+    --bg-peach: #FFEAD9;
+    --footer-dark: #121212;
+    --footer-bg: #222222;
+    --footer-social-bg: #FCA94E;
+    --text-light: #FFF;
+    /* Form Sayfası Özel Renkleri */
+    --bg-body: #FFF5EE;
+    --box-bg: #FFE2C8;
+    --btn-bg: #FFB875;
+    --btn-hover: #FF9F5B;
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* ÖNEMLİ: Alt alta dizilmesi için */
+    min-height: 100vh;
+}
+
+/* =========================================
+   2. ANA İÇERİK (LOGO VE FORM)
+   ========================================= */
+.main-content {
+    flex: 1; /* Footer'ı en alta itmek için boşluğu doldurur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Logo kısmı */
+.logo-section {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    color: #6b4b3e;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* Kayıt kutusu */
+.register-box {
+    background-color: var(--box-bg);
+    padding: 40px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px; /* Çok geniş olmaması için sınır */
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Sekme butonları */
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.tab-buttons button {
+    background-color: #FFDAB5;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: #b56c3c;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.tab-buttons button.active {
+    background-color: var(--btn-bg);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.tab-buttons button:hover {
+    transform: translateY(-1px);
+}
+
+/* Form etiketleri ve inputlar */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #3b2e28;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,0.1);
+    font-size: 15px;
+    outline: none;
+    background-color: #FFF5EE;
+}
+
+input:focus {
+    box-shadow: 0 0 0 2px var(--btn-bg);
+}
+
+/* Kayıt Ol butonu */
+form button {
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   3. FOOTER (STANDART)
+   ========================================= */
+footer {
+    background-color: var(--footer-bg); 
+    color: var(--text-light);
+    padding: 4rem 0 0 0;
+    margin-top: auto; /* İçerik azsa bile en alta yapışır */
+}
+
+/* Footer içindeki container class'ı çakışmasın diye özel ayar */
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left; /* Body center'ı ezmek için */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #444;
+    align-items: start;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-column h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.footer-column h4::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-orange);
+    margin-top: 8px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    display: inline-block;
+    font-size: 0.95rem;
+    color: #B0B0B0;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    position: relative;
+    padding-left: 0;
+}
+
+.footer-column ul li a:hover {
+    color: var(--primary-orange);
+    padding-left: 10px;
+}
+
+.footer-column ul li a::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    color: var(--primary-orange);
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    line-height: 0;
+    background-color: transparent;
+    width: auto; height: auto;
+}
+
+.footer-column ul li a:hover::before {
+    opacity: 1;
+    left: -15px;
+}
+
+/* Footer Sosyal Medya Kutusu */
+.footer-social {
+    background-color: #FCA94E;
+    color: #222;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(252, 169, 78, 0.3);
+}
+
+.footer-social h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Sosyal Medya İkonları */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid transparent;
+}
+
+.social-icons a:hover {
+    background-color: #FFF;
+    color: #FCA94E;
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.whatsapp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.whatsapp-container:hover { background-color: rgba(255, 255, 255, 0.25); }
+.whatsapp-container i { font-size: 1.8rem; color: #fff; }
+.whatsapp-container p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: #fff; font-weight: 600; text-align: left; }
+
+.qr-code {
+    width: 140px;
+    height: 140px;
+    background-color: #FFF;
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.copyright-text {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    font-size: 0.8rem;
+    color: #666;
+    letter-spacing: 0.5px;
+    border-top: none;
+    margin-top: 0;
+}
+
+/* Medya Sorguları */
+@media (max-width: 1024px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-links { flex-direction: column; gap: 2rem; }
+}
