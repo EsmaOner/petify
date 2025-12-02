@@ -408,9 +408,15 @@ nav { display: flex; gap: 20px; height: 100%; align-items: center; }
     color: var(--text-dark);
     margin: 0.3rem 0; 
     flex-grow: 1; 
+    
+    /* Metin Kırpma (Multi-line Truncation) - WebKit Uyumlu */
     display: -webkit-box; 
     -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical; 
+    
+    /* Standart Özellik (Gelecek Uyumlu) */
+    line-clamp: 2; /* Burası eklendi */
+    
     overflow: hidden; 
     min-height: 38px; 
     line-height: 1.2;
