@@ -90,16 +90,15 @@ header {
 }
 
 .profile-container {
-    position: relative; /* Menü buna göre açılacak */
+    position: relative; 
     cursor: pointer;
-    z-index: 1001; /* Her şeyin üstünde durmasını garanti eder */
+    z-index: 1001; 
 }
 
-/* 2. Açılır Menü (Gizleme ve Konumlandırma) */
 .dropdown-menu {
-    position: absolute; /* Normal akıştan çıkar */
-    top: 100%;          /* Header'ın tam altından başla */
-    right: 0;           /* Sağ kenara hizala */
+    position: absolute; 
+    top: 100%;          
+    right: 0;           
     width: 220px; 
     background-color: #fff;
     border-radius: 10px; 
@@ -107,21 +106,18 @@ header {
     padding: 15px;
     border: 1px solid #f0f0f0; 
 
-    /* GİZLEME ve ANİMASYON KURALLARI */
     opacity: 0; 
-    visibility: hidden; /* Mouse yokken tıklamayı engeller */
-    transform: translateY(10px); /* Hafif aşağıdan gelme efekti */
+    visibility: hidden; 
+    transform: translateY(10px); 
     transition: all 0.3s ease;
 }
 
-/* 3. Hover Durumu (Görünür Yap) */
 .profile-container:hover .dropdown-menu { 
     opacity: 1; 
     visibility: visible; 
     transform: translateY(0);
 }
 
-/* 4. Menü İçeriği Stilleri */
 .welcome-msg { 
     font-size: 0.85rem; 
     color: #666; 
@@ -145,7 +141,6 @@ header {
     align-items: center; 
     justify-content: center; 
     gap: 8px;
-    /* Renkler için var(--primary-orange) kullanılır */
 }
 .login { 
     background-color: var(--primary-orange); 
@@ -656,11 +651,173 @@ footer {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.copyright-text {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #1a1a1a;
-    font-size: 0.8rem;
-    color: #666;
-    letter-spacing: 0.5px;
+/* ================================================= */
+/* RESPONSIVE TASARIM (MOBİL UYUMLULUK) - MENÜ ÇIKARILDI */
+/* ================================================= */
+
+/* Ekran genişliği 1100px ve altına düştüğünde navigasyon gizlendi */
+@media (max-width: 1100px) {
+    header {
+        padding: 0 20px;
+    }
+    
+    /* Menüyü tamamen gizle */
+    nav {
+        display: none; 
+    }
+
+    .header-actions {
+        gap: 15px;
+    }
+
+    .search-box input {
+        width: 150px; /* Arama kutusunu küçült */
+    }
+
+    /* 950px altında ödeme sayfasına özel düzenlemeler */
+    @media (max-width: 950px) {
+        /* Ana içerik: Kart ve Formun alt alta gelmesi */
+        .payment-container {
+            flex-direction: column; /* Yataydan dikeye geçiş */
+            width: 90%;
+            height: auto; 
+            padding: 0;
+            margin: 40px 0;
+        }
+
+        .card-visual {
+            width: 100%;
+            padding: 40px 0; 
+            background-color: var(--bg-peach); 
+            position: relative;
+            height: 350px; 
+            display: block; 
+        }
+
+        /* Kart görselinin ve gölgesinin mobil konumlandırılması */
+        .card-shadow {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px; 
+            height: 200px;
+        }
+
+        .credit-card {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            height: 200px;
+            padding: 15px;
+        }
+        
+        /* Kart Numarası yazı boyutunu küçült */
+        .card-number-display {
+             font-size: 18px;
+        }
+        
+        /* Form bölümü */
+        .form-section {
+            width: 100%;
+            padding: 30px; 
+        }
+
+        .form-section h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            flex-direction: column; /* Tarih ve CCV'nin alt alta gelmesi */
+            gap: 0;
+        }
+
+        .input-group.half {
+            width: 100%; /* Tam genişlik kapla */
+        }
+        
+        .total-amount {
+            text-align: center;
+        }
+        
+        .btn-confirm {
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        /* Footer Düzenlemesi */
+        footer {
+            margin-top: 0;
+        }
+        
+        .footer-grid {
+            grid-template-columns: 1fr; /* Tüm sütunları alt alta getir */
+            gap: 2rem;
+            padding: 0 20px 2rem 20px;
+        }
+        
+        .footer-links {
+            flex-direction: column; /* Bağlantı sütunlarını alt alta getir */
+            gap: 1.5rem;
+        }
+        
+        .footer-column {
+            align-items: center; /* Sütun başlıklarını ortala */
+        }
+
+        .footer-column ul {
+            text-align: center;
+        }
+
+        .footer-column h4::after {
+            margin: 8px auto 0 auto; /* Çizgiyi ortala */
+        }
+        
+        .footer-column ul li a {
+            padding-left: 0; /* Mobil görünümde ok efektini kaldır */
+        }
+        
+        .footer-column ul li a:hover::before {
+            opacity: 0;
+        }
+    }
+    
+    /* Çok küçük ekranlar için (örneğin 480px altı) */
+    @media (max-width: 480px) {
+        header {
+            height: 60px; /* Header yüksekliğini küçült */
+        }
+        
+        .petify-logo {
+            height: 40px;
+        }
+        
+        .search-box {
+            display: none; /* Arama çubuğunu gizle */
+        }
+        
+        .icons a {
+            font-size: 18px;
+        }
+        
+        /* Ana sayfa linkini gizle */
+        .nav-link[href="anasayfa.html"] {
+            display: none;
+        }
+        
+        /* Kart ve form padding'lerini ayarla */
+        .form-section {
+            padding: 20px; 
+        }
+
+        .card-shadow, .credit-card {
+            width: 90%; 
+        }
+        
+        .credit-card {
+            left: 50%;
+        }
+    }
 }
