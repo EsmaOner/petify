@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,152 +12,156 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   
+
 </head>
+
 <body>
 
     <header>
         <div class="logo">
-            <a href="anasayfa.html">
-                <img src="img/petify.png" alt="Petify Logo" class="petify-logo"> 
+            <a href="index.html">
+                <img src="img/petify.png" alt="Petify Logo" class="petify-logo">
             </a>
         </div>
-        
-        <nav>
 
-  <div class="nav-item">
-             <a href="anasayfa.html" class="nav-link">Ana Sayfa</a>
+        <div class="mobile-menu">
+            <nav>
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Ana Sayfa</a>
+                </div>
+
+                <div class="nav-item has-submenu">
+                    <div class="nav-link-wrapper">
+                        <a href="kediurunler.html" class="nav-link">Kedi Ürünleri</a>
+                        <button class="submenu-toggle desktop-hidden" aria-expanded="false"
+                            data-target="#kedi-mega-menu">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mega-menu" id="kedi-mega-menu">
+                        <div class="menu-column">
+                            <h3>Beslenme & Sağlık</h3>
+                            <div class="submenu-group">
+                                <a href="kedimama.html" class="main-cat">-Kedi Maması</a>
+                                <a href="kedimama.html#kuru-mama">Kuru Mama</a>
+                                <a href="kedimama.html#konserve-mama">Konserve Mama</a>
+                                <a href="kedimama.html#odul-mamasi">Ödül Maması</a>
+                            </div>
+                            <div class="submenu-group">
+                                <a href="saglıkvemama.html" class="main-cat">-Sağlık & Takviye</a>
+                                <a href="vitaminler.html#vitaminler">Vitaminler</a>
+                                <a href="maltlar.html#maltlar">Maltlar</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <h3>Yaşam Alanı & Seyahat</h3>
+                            <div class="submenu-group">
+                                <a href="kediyatak.html" class="main-cat">-Kedi Yatağı</a>
+                                <a href="keditasımacanta.html" class="main-cat">-Kedi Taşıma Çantası</a>
+                                <a href="kedimamasukabi.html" class="main-cat">-Mama ve Su Kabı</a>
+                            </div>
+                            <div class="submenu-group">
+                                <a href="kedituvaleturun.html" class="main-cat">-Kedi Tuvalet Ürünleri</a>
+                                <a href="kedikum.html">Kedi Kumu</a>
+                                <a href="kedikumkabı.html">Kum Kabı</a>
+                                <a href="kedikumkurek.html">Kürek</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <h3>Eğlence & Bakım</h3>
+                            <div class="submenu-group">
+                                <a href="kedioyuncakveaksesuar.html" class="main-cat">-Oyuncak ve Aksesuar</a>
+                                <a href="kedioyuncak.html">Kedi Oyuncakları</a>
+                                <a href="keditirmalamatahta.html">Tırmalama Tahtası</a>
+                                <a href="keditasma.html">Kedi Tasması ve Gezdirme</a>
+                            </div>
+                            <div class="submenu-group">
+                                <a href="kedibakimurun.html" class="main-cat">-Kedi Bakım Ürünleri</a>
+                                <a href="kedituybakim.html">Tüy Bakım Ürünleri</a>
+                                <a href="kedigozkulaktemizlik.html">Göz ve Kulak Temizliği</a>
+                                <a href="keditirnakbakim.html">Tırnak Bakım Ürünleri</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item has-submenu">
+                    <div class="nav-link-wrapper">
+                        <a href="kopek-sayfasi.html" class="nav-link">Köpek Ürünleri</a>
+                        <button class="submenu-toggle desktop-hidden" aria-expanded="false"
+                            data-target="#kopek-mega-menu">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="mega-menu" id="kopek-mega-menu">
+                        <div class="menu-column">
+                            <h3>Beslenme & Sağlık</h3>
+                            <div class="submenu-group">
+                                <a href="kopekmama.html" class="main-cat">-Köpek Maması</a>
+                                <a href="kopekmama.html">Kuru Mama</a>
+                                <a href="kopekmama.html">Konserve Mama</a>
+                                <a href="kopekmama.html">Ödül Maması</a>
+                            </div>
+                            <div class="submenu-group">
+                                <a href="kopeksaglikvetakviye.html" class="main-cat">-Sağlık & Takviye</a>
+                                <a href="kopekvitamin.html">Vitaminler</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <h3>Yaşam Alanı & Seyahat</h3>
+                            <div class="submenu-group">
+                                <a href="kopekyatak.html" class="main-cat">-Köpek Yatağı</a>
+                                <a href="kopektasimakafes.html" class="main-cat">-Köpek Taşıma Kafesi</a>
+                                <a href="kopekmamasukabi.html" class="main-cat">-Mama ve Su Kabı</a>
+                            </div>
+                        </div>
+                        <div class="menu-column">
+                            <h3>Eğlence & Bakım</h3>
+                            <div class="submenu-group">
+                                <a href="kopekoyuncakveaksesuar.html" class="main-cat">-Oyuncak ve Aksesuar</a>
+                                <a href="kopekoyuncak.html">Köpek Oyuncakları</a>
+                                <a href="kopektasma.html">Köpek Tasması ve Gezdirme</a>
+                            </div>
+                            <div class="submenu-group">
+                                <a href="kopekbakiurun.html" class="main-cat">-Köpek Bakım Ürünleri</a>
+                                <a href="kopektuybakim.html">Tüy Bakım Ürünleri</a>
+                                <a href="kopekgozkulakurunleri.html">Göz ve Kulak Temizliği</a>
+                                <a href="kopektirnakbakim.html">Tırnak Bakım Ürünleri</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-            <div class="nav-item">
-                <a href="kediurunler.html" class="nav-link">Kedi Ürünleri</a>
-                <div class="mega-menu">
-                    <div class="menu-column">
-                        <h3>Beslenme & Sağlık</h3>
-                     <div class="submenu-group">
-                           <a href="kedimama.html"><h4>-Kedi Maması</h4></a>
-                           <a href="kedimama.html#kuru-mama">Kuru Mama</a>
-                           <a href="kedimama.html#konserve-mama">Konserve Mama</a>
-                           <a href="kedimama.html#odul-mamasi">Ödül Maması</a>
-                      </div>
-                        <div class="submenu-group">
-                           <a href="saglıkvemama.html"></a> <h4>-Sağlık & Takviye</h4>
-                           <a href="vitaminler.html#vitaminler"></a> <a href="#">Vitaminler</a>
-                           <a href="maltlar.html#maltlar"></a> <a href="#">Maltlar</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <h3>Yaşam Alanı & Seyahat</h3>
-                        <div class="submenu-group">
-                             <a href="kediyatak.html"></a><h4>-Kedi Yatağı</h4>
-                             <a href="keditasımacanta.html"></a><h4>-Kedi Taşıma Çantası</h4>
-                             <a href="kedimamasukabi.html"></a><h4>-Mama ve Su Kabı</h4>
-                        </div>
-                        <div class="submenu-group">
-                             <a href="kedituvaleturun.html"></a><h4>-Kedi Tuvalet Ürünleri</h4>
-                             <a href="kedikum.html"></a><a href="#">Kedi Kumu</a>
-                             <a href="kedikumkabı.html"></a><a href="#">Kum Kabı</a>
-                             <a href="kedikumkurek.html"></a><a href="#">Kürek</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <h3>Eğlence & Bakım</h3>
-                        <div class="submenu-group">
-                             <a href="kedioyuncakveaksesuar.html"></a><h4>-Oyuncak ve Aksesuar</h4>
-                             <a href="kedioyuncak.html"></a><a href="#">Kedi Oyuncakları</a>
-                             <a href="keditirmalamatahta.html"></a><a href="#">Tırmalama Tahtası</a>
-                             <a href="keditasma.html"></a><a href="#">Kedi Tasması ve Gezdirme</a>
-                        </div>
-                        <div class="submenu-group">
-                             <a href="kedibakimurun.html"></a><h4>-Kedi Bakım Ürünleri</h4>
-                             <a href="kedituybakim.html"></a><a href="#">Tüy Bakım Ürünleri</a>
-                             <a href="kedigozkulaktemizlik.html"></a><a href="#">Göz ve Kulak Temizliği</a>
-                             <a href="keditirnakbakim.html"></a><a href="#">Tırnak Bakım Ürünleri</a>
+        <div class="header-right-wrapper" style="display: flex; align-items: center; gap: 15px;">
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Ara...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="icons">
+                    <a href="sepet.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                    <a href="bildirimler.html"><i class="fa-solid fa-bell"></i></a>
+                    <div class="profile-container">
+                        <a href="profil.html" class="profile-icon"><i class="fa-regular fa-circle-user"></i></a>
+                        <div class="dropdown-menu">
+                            <p class="welcome-msg">Hesabınıza erişin</p>
+                            <div class="action-buttons">
+                                <a href="giris.html" class="btn login">Giriş Yap</a>
+                                <a href="kayit.html" class="btn register">Kayıt Ol</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="nav-item">
-                <a href="kopek-sayfasi.html" class="nav-link">Köpek Ürünleri</a>
-                <div class="mega-menu">
-                    <div class="menu-column">
-                        <h3>Beslenme & Sağlık</h3>
-                        <div class="submenu-group">
-                             <a href="kopekmama.html"></a><h4>-Köpek Maması</h4>
-                             <a href="kopekmama.html"></a><a href="#">Kuru Mama</a>
-                             <a href="kopekmama.html"></a><a href="#">Konserve Mama</a>
-                             <a href="kopekmama.html"></a><a href="#">Ödül Maması</a>
-                        </div>
-                        <div class="submenu-group">
-                             <a href="kopeksaglikvetakviye.html"></a><h4>-Sağlık & Takviye</h4>
-                             <a href="kopekvitamin.html"></a><a href="#">Vitaminler</a>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <h3>Yaşam Alanı & Seyahat</h3>
-                        <div class="submenu-group">
-                             <a href="kopekyatak.html"></a><h4>-Köpek Yatağı</h4>
-                             <a href="kopektasimakafes.html"></a><h4>-Köpek Taşıma Kafesi</h4>
-                             <a href="kopekmamasukabi.html"></a><h4>-Mama ve Su Kabı</h4>
-                        </div>
-                    </div>
-                    <div class="menu-column">
-                        <h3>Eğlence & Bakım</h3>
-                        <div class="submenu-group">
-                            <a href="kopekoyuncakveaksesuar.html"></a><h4>-Oyuncak ve Aksesuar</h4>
-                            <a href="kopekoyuncak.html"></a><a href="#">Köpek Oyuncakları</a>
-                            <a href="kopektasma.html"></a><a href="#">Köpek Tasması ve Gezdirme</a>
-                        </div>
-                        <div class="submenu-group">
-                            <a href="kopekbakiurun.html"></a><h4>-Köpek Bakım Ürünleri</h4>
-                            <a href="kopektuybakim.html"></a><a href="#">Tüy Bakım Ürünleri</a>
-                            <a href="kopekgozkulakurunleri.html"></a><a href="#">Göz ve Kulak Temizliği</a>
-                            <a href="kopektirnakbakim.html"></a><a href="#">Tırnak Bakım Ürünleri</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-             <div class="header-actions">
-        <div class="nav-toggle" id="navToggle">
-            <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="search-box">
-            </div>
-            <div class="icons">
-               </div>
-            </div>
-
-        <div class="header-actions">
-            <div class="search-box">
-                <input type="text" placeholder="Ara...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="icons">
-                <a href="sepet.html" aria-label="Sepetim">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="bildirimler.html" aria-label="Bildirimler">
-                    <i class="fa-solid fa-bell"></i>
-                </a>
-               <div class="profile-container">
-    <a href="profil.html" class="profile-icon-link">
-        <i class="fa-regular fa-circle-user"></i>
-    </a>
-    <div class="dropdown-menu">
-        <p class="welcome-msg">Hesabınıza erişin</p>
-        <div class="action-buttons">
-            <a href="giris.html" class="btn login">
-                <i class="fa-solid fa-right-to-bracket"></i> Giriş Yap
-            </a>
-            <a href="kayit.html" class="btn register">
-                <i class="fa-solid fa-user-plus"></i> Kayıt Ol
-            </a>
+            <button class="hamburger-menu" aria-label="Menü Aç/Kapat" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
-        </div>
-</div>
     </header>
     </div>
 
@@ -164,29 +169,30 @@
 
     <main>
         <section class="hero-banner">
-            <img src="img/ustbanner.png" alt="İndirim Bannerı"> </section>
+            <img src="img/ustbanner.png" alt="İndirim Bannerı">
+        </section>
 
-      <section class="pet-category-buttons">
-    
-    <div class="container"> 
-        
-        <a href="kedi-sayfasi.html" class="pet-btn">
-            <img src="img/kedibuton1.png" alt="Kedi Ürünleri">
-        </a>
-        <a href="yavru-kedi-sayfasi.html" class="pet-btn">
-            <img src="img/kedibuton2.png" alt="Yavru Kedi Ürünleri">
-        </a>
-        <a href="kopek-sayfasi.html" class="pet-btn">
-            <img src="img/köpekbuton1.png" alt="Köpek Ürünleri">
-        </a>
-        <a href="yavru-kopek-sayfasi.html" class="pet-btn">
-            <img src="img/köpekbuton2.png" alt="Yavru Köpek Ürünleri">
-        </a>
+        <section class="pet-category-buttons">
 
-    </div>
-    </section>
+            <div class="container">
+
+                <a href="kedi-sayfasi.html" class="pet-btn">
+                    <img src="img/kedibuton1.png" alt="Kedi Ürünleri">
+                </a>
+                <a href="yavru-kedi-sayfasi.html" class="pet-btn">
+                    <img src="img/kedibuton2.png" alt="Yavru Kedi Ürünleri">
+                </a>
+                <a href="kopek-sayfasi.html" class="pet-btn">
+                    <img src="img/köpekbuton1.png" alt="Köpek Ürünleri">
+                </a>
+                <a href="yavru-kopek-sayfasi.html" class="pet-btn">
+                    <img src="img/köpekbuton2.png" alt="Yavru Köpek Ürünleri">
+                </a>
+
+            </div>
+        </section>
         <section class="category-shortcuts">
-             <div class="container">
+            <div class="container">
                 <a href="#" class="category-item">
                     <img src="img/kurumama.jpg" alt="Kuru Mama">
                     <span>Kuru Mama</span>
@@ -214,193 +220,282 @@
             </div>
         </section>
 
-       <section class="product-grid">
+        <section class="product-grid">
             <div class="container">
 
                 <div class="product-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/kedikmama.png" alt="kedikmama" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">Royal Canin</span>
                         <h3 class="product-name">Royal Canin Sterilised Yetişkin Kısırlaştırılmış Kedi Maması</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺1.086,00"><span class="variant-name">2Kg</span><span class="variant-price">₺1.086,00</span></button>
-                            <button class="variant-btn" data-price="₺1.589,90"><span class="variant-name">4Kg</span><span class="variant-price">₺1.589,90</span></button>
-                            <button class="variant-btn" data-price="₺3.588,90"><span class="variant-name">10Kg</span><span class="variant-price">₺3.588,90</span></button>
-                            <button class="variant-btn" data-price="₺5.138,76"><span class="variant-name">15Kg</span><span class="variant-price">₺5.138,76</span></button>
+                            <button class="variant-btn active" data-price="₺1.086,00"><span
+                                    class="variant-name">2Kg</span><span class="variant-price">₺1.086,00</span></button>
+                            <button class="variant-btn" data-price="₺1.589,90"><span
+                                    class="variant-name">4Kg</span><span class="variant-price">₺1.589,90</span></button>
+                            <button class="variant-btn" data-price="₺3.588,90"><span
+                                    class="variant-name">10Kg</span><span
+                                    class="variant-price">₺3.588,90</span></button>
+                            <button class="variant-btn" data-price="₺5.138,76"><span
+                                    class="variant-name">15Kg</span><span
+                                    class="variant-price">₺5.138,76</span></button>
                         </div>
                         <div class="product-price"><span class="new-price">₺1.086,00</span></div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/köpekmama.png" alt="köpekmama" class="product-image">
                     <div class="product-info">
-                         <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                         <span class="product-brand">Reflex Plus</span>
-                         <h3 class="product-name">Reflex Plus Kuzulu Orta ve Büyük Irk Yaşlı Köpek Maması</h3>
-                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺410,22"><span class="variant-name">3Kg</span><span class="variant-price">₺410,22</span></button>
-                            <button class="variant-btn" data-price="₺1.953,24"><span class="variant-name">15Kg</span><span class="variant-price">₺1.953,24</span></button>
-                         </div>
-                         <div class="product-price"><span class="new-price">₺410,22</span></div>
-                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
-                         </div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
+                        <span class="product-brand">Reflex Plus</span>
+                        <h3 class="product-name">Reflex Plus Kuzulu Orta ve Büyük Irk Yaşlı Köpek Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-btn active" data-price="₺410,22"><span
+                                    class="variant-name">3Kg</span><span class="variant-price">₺410,22</span></button>
+                            <button class="variant-btn" data-price="₺1.953,24"><span
+                                    class="variant-name">15Kg</span><span
+                                    class="variant-price">₺1.953,24</span></button>
+                        </div>
+                        <div class="product-price"><span class="new-price">₺410,22</span></div>
+                        <div class="product-controls">
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/oyuncak.png" alt="oyuncak" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Gigwi</span>
                         <h3 class="product-name">Gigwi Catnipli Işıklı Kedi Oyuncağı</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺303,00"><span class="variant-name">1 Adet</span><span class="variant-price">₺303,00</span></button>
+                            <button class="variant-btn active" data-price="₺303,00"><span class="variant-name">1
+                                    Adet</span><span class="variant-price">₺303,00</span></button>
                         </div>
                         <div class="product-price"><span class="new-price">₺303,00</span></div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                <div class="product-card">
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/tasma.png" alt="tasma" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">Cattie</span>
                         <h3 class="product-name">Cattie Gerçek Deriden Taşlı Kedi Boyun Tasması</h3>
                         <div class="product-variants">
-                             <button class="variant-btn active" data-price="₺214,00"><span class="variant-name">Small</span><span class="variant-price">₺214,00</span></button>
-                             <button class="variant-btn" data-price="₺217,00"><span class="variant-name">Medium</span><span class="variant-price">₺217,00</span></button>
-                             <button class="variant-btn" data-price="₺230,00"><span class="variant-name">Large</span><span class="variant-price">₺230,00</span></button>
-                             <button class="variant-btn" data-price="₺242,00"><span class="variant-name">XLarge</span><span class="variant-price">₺242,00</span></button>
+                            <button class="variant-btn active" data-price="₺214,00"><span
+                                    class="variant-name">Small</span><span class="variant-price">₺214,00</span></button>
+                            <button class="variant-btn" data-price="₺217,00"><span
+                                    class="variant-name">Medium</span><span
+                                    class="variant-price">₺217,00</span></button>
+                            <button class="variant-btn" data-price="₺230,00"><span
+                                    class="variant-name">Large</span><span class="variant-price">₺230,00</span></button>
+                            <button class="variant-btn" data-price="₺242,00"><span
+                                    class="variant-name">XLarge</span><span
+                                    class="variant-price">₺242,00</span></button>
                         </div>
-                        
-                       <div class="product-price"><span class="new-price">₺214,00</span></div> <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+
+                        <div class="product-price"><span class="new-price">₺214,00</span></div>
+                        <div class="product-controls">
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                <div class="product-card">
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/kedikumu1.png" alt="kedikumu1" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Pro Choice</span>
                         <h3 class="product-name">Prochoice Bentonit Marsilya Sabunlu Topaklanan Doğal Kedi Kumu</h3>
                         <div class="product-variants">
-                             <button class="variant-btn active" data-price="₺359,74"><span class="variant-name">10Lt</span><span class="variant-price">₺359,74</span></button>
-                             <button class="variant-btn" data-price="₺683,51"><span class="variant-name">20Lt</span><span class="variant-price">₺683,51</span></button>
+                            <button class="variant-btn active" data-price="₺359,74"><span
+                                    class="variant-name">10Lt</span><span class="variant-price">₺359,74</span></button>
+                            <button class="variant-btn" data-price="₺683,51"><span class="variant-name">20Lt</span><span
+                                    class="variant-price">₺683,51</span></button>
                         </div>
                         <div class="product-price"><span class="new-price">₺359,74</span></div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                <div class="product-card">
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/kedimama2.png" alt="kedimama2" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">Royal Canin</span>
                         <h3 class="product-name">Royal Canin Hair Skin Deri ve Tüy Sağlığı için Kedi Maması</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺1.381,00"><span class="variant-name">2Kg</span><span class="variant-price">₺1381,00</span></button>
-                            <button class="variant-btn" data-price="₺2.401,00"><span class="variant-name">4Kg</span><span class="variant-price">₺2.401,00</span></button>
+                            <button class="variant-btn active" data-price="₺1.381,00"><span
+                                    class="variant-name">2Kg</span><span class="variant-price">₺1381,00</span></button>
+                            <button class="variant-btn" data-price="₺2.401,00"><span
+                                    class="variant-name">4Kg</span><span class="variant-price">₺2.401,00</span></button>
                         </div>
                         <div class="product-price"><span class="new-price">₺1.381,00</span></div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                <div class="product-card">
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/köpekmama2.png" alt="köpekmama2" class="product-image">
                     <div class="product-info">
-                         <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                         <span class="product-brand">Natures Variety</span>
-                         <h3 class="product-name">Natures Variety Norveç Somonlu Küçük Irk Yetişkin Köpek Maması</h3>
-                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺1.014,52"><span class="variant-name">2Kg</span><span class="variant-price">₺1.014,52</span></button>
-                            <button class="variant-btn" data-price="₺3.119,52"><span class="variant-name">7Kg</span><span class="variant-price">₺3.119,52</span></button>
-                         </div>
-                         <div class="product-price"><span class="new-price">₺1.014,52</span></div>
-                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
-                         </div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
+                        <span class="product-brand">Natures Variety</span>
+                        <h3 class="product-name">Natures Variety Norveç Somonlu Küçük Irk Yetişkin Köpek Maması</h3>
+                        <div class="product-variants">
+                            <button class="variant-btn active" data-price="₺1.014,52"><span
+                                    class="variant-name">2Kg</span><span class="variant-price">₺1.014,52</span></button>
+                            <button class="variant-btn" data-price="₺3.119,52"><span
+                                    class="variant-name">7Kg</span><span class="variant-price">₺3.119,52</span></button>
+                        </div>
+                        <div class="product-price"><span class="new-price">₺1.014,52</span></div>
+                        <div class="product-controls">
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                        </div>
                     </div>
                 </div>
-                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                <div class="product-card">
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/fırça.PNG" alt="fırça" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">İmac</span>
                         <h3 class="product-name">İmac Çelik Dişli Ahşap Tırmık Kedi ve Köpek Tarama Fırçası</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺444,30"><span class="variant-name">Uzun Tüylü</span><span class="variant-price">₺444,30</span></button>
-                             <button class="variant-btn" data-price="₺466,92"><span class="variant-name">Kısa Tüylü</span><span class="variant-price">₺466,92</span></button>
+                            <button class="variant-btn active" data-price="₺444,30"><span class="variant-name">Uzun
+                                    Tüylü</span><span class="variant-price">₺444,30</span></button>
+                            <button class="variant-btn" data-price="₺466,92"><span class="variant-name">Kısa
+                                    Tüylü</span><span class="variant-price">₺466,92</span></button>
                         </div>
                         <div class="product-price"><span class="new-price">₺444,30</span></div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                <div class="product-card">
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/frizbi.png" alt="frizbi" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">Gigwi</span>
                         <h3 class="product-name">Gigwi Durafleks Uçan ve Yüzen Disk Plastik Köpek Oyuncağı</h3>
-                         <div class="product-variants">
-                             <button class="variant-btn active" data-price="₺473,00"><span class="variant-name">Sarı</span><span class="variant-price">₺473,00</span></button>
-                             <button class="variant-btn" data-price="₺473,00"><span class="variant-name">Mavi</span><span class="variant-price">₺473,00</span></button>
-                             <button class="variant-btn" data-price="₺473,00"><span class="variant-name">Pembe</span><span class="variant-price">₺473,000</span></button>
-                             <button class="variant-btn" data-price="₺473,00"><span class="variant-name">Turuncu</span><span class="variant-price">₺473,00</span></button>
-                         </div>
+                        <div class="product-variants">
+                            <button class="variant-btn active" data-price="₺473,00"><span
+                                    class="variant-name">Sarı</span><span class="variant-price">₺473,00</span></button>
+                            <button class="variant-btn" data-price="₺473,00"><span class="variant-name">Mavi</span><span
+                                    class="variant-price">₺473,00</span></button>
+                            <button class="variant-btn" data-price="₺473,00"><span
+                                    class="variant-name">Pembe</span><span
+                                    class="variant-price">₺473,000</span></button>
+                            <button class="variant-btn" data-price="₺473,00"><span
+                                    class="variant-name">Turuncu</span><span
+                                    class="variant-price">₺473,00</span></button>
+                        </div>
                         <div class="product-price"><span class="new-price">₺473,00</span></div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card">
-                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
+                <div class="product-card">
+                    <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/köpektasma1.png" alt="köpektasma1" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Doggie</span>
                         <h3 class="product-name">Doggie Comfort Dokuma Kemikli Köpek Boyun Tasması</h3>
-                         <div class="product-variants">
-                             <button class="variant-btn active" data-price="₺373,50"><span class="variant-name">Kırmızı-Small</span><span class="variant-price">₺373,50</span></button>
-                             <button class="variant-btn" data-price="₺377,00"><span class="variant-name">Kırmızı-Medium</span><span class="variant-price">₺377,00</span></button>
-                             <button class="variant-btn" data-price="₺388,00"><span class="variant-name">Kırmızı-Large</span><span class="variant-price">₺388,00</span></button>
-                             <button class="variant-btn" data-price="₺359,00"><span class="variant-name">Siyah-Medium</span><span class="variant-price">₺359,00</span></button>
+                        <div class="product-variants">
+                            <button class="variant-btn active" data-price="₺373,50"><span
+                                    class="variant-name">Kırmızı-Small</span><span
+                                    class="variant-price">₺373,50</span></button>
+                            <button class="variant-btn" data-price="₺377,00"><span
+                                    class="variant-name">Kırmızı-Medium</span><span
+                                    class="variant-price">₺377,00</span></button>
+                            <button class="variant-btn" data-price="₺388,00"><span
+                                    class="variant-name">Kırmızı-Large</span><span
+                                    class="variant-price">₺388,00</span></button>
+                            <button class="variant-btn" data-price="₺359,00"><span
+                                    class="variant-name">Siyah-Medium</span><span
+                                    class="variant-price">₺359,00</span></button>
                         </div>
                         <div class="product-price"><span class="new-price">₺373,50</span></div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -416,17 +511,28 @@
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/yavrukedimaması.png" alt="yavrukedimaması" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Midos</span>
                         <h3 class="product-name">Midos Tavuklu Yavru Kedi Maması</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺449,99"><span class="variant-name">2Kg</span><span class="variant-price">₺449,99</span></button>
-                            <button class="variant-btn" data-price="₺2.223,52"><span class="variant-name">15Kg</span><span class="variant-price">₺2.223,52</span></button>
+                            <button class="variant-btn active" data-price="₺449,99"><span
+                                    class="variant-name">2Kg</span><span class="variant-price">₺449,99</span></button>
+                            <button class="variant-btn" data-price="₺2.223,52"><span
+                                    class="variant-name">15Kg</span><span
+                                    class="variant-price">₺2.223,52</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%44 İndirim</span><div class="product-price"><span class="old-price">₺809,82</span><span class="new-price">₺449,99</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%44 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺809,82</span><span
+                                    class="new-price">₺449,99</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -434,255 +540,409 @@
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/malt.png" alt="malt" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">OneVet</span>
                         <h3 class="product-name">OneVet Multi Vitamin Biotin Süper Destekleyici Kedi Maltı</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺262,90"><span class="variant-name">100g</span><span class="variant-price">₺262,90</span></button>
+                            <button class="variant-btn active" data-price="₺262,90"><span
+                                    class="variant-name">100g</span><span class="variant-price">₺262,90</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%17 İndirim</span><div class="product-price"><span class="old-price">₺316,00</span><span class="new-price">₺262,90</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%17 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺316,00</span><span
+                                    class="new-price">₺262,90</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/yavruköpekmaması.png" alt="yavruköpekmaması" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Animal World</span>
                         <h3 class="product-name">Animal World Puppy Kuzu Etli ve Pirinçli Yavru Köpek Maması</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺1.434,90"><span class="variant-name">15kg</span><span class="variant-price">₺1.434,90</span></button>
+                            <button class="variant-btn active" data-price="₺1.434,90"><span
+                                    class="variant-name">15kg</span><span
+                                    class="variant-price">₺1.434,90</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%44 İndirim</span><div class="product-price"><span class="old-price">₺3.582,82</span><span class="new-price">₺1.434,90</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%44 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺3.582,82</span><span
+                                    class="new-price">₺1.434,90</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/oyuncak1.png" alt="oyuncak1" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">PetzzCats</span>
                         <h3 class="product-name">PetzzCats Bug Matatabi ve Çıngıraklı Sesli Kedi Oyuncağı</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺180,00"><span class="variant-name">Sarı</span><span class="variant-price">₺180,00</span></button>
-                            <button class="variant-btn" data-price="₺180,00"><span class="variant-name">Turuncu</span><span class="variant-price">₺180,00</span></button>
-                            <button class="variant-btn" data-price="₺180,00"><span class="variant-name">Yeşil</span><span class="variant-price">₺180,00</span></button>
+                            <button class="variant-btn active" data-price="₺180,00"><span
+                                    class="variant-name">Sarı</span><span class="variant-price">₺180,00</span></button>
+                            <button class="variant-btn" data-price="₺180,00"><span
+                                    class="variant-name">Turuncu</span><span
+                                    class="variant-price">₺180,00</span></button>
+                            <button class="variant-btn" data-price="₺180,00"><span
+                                    class="variant-name">Yeşil</span><span class="variant-price">₺180,00</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%31 İndirim</span><div class="product-price"><span class="old-price">₺260,00</span><span class="new-price">₺180,00</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%31 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺260,00</span><span
+                                    class="new-price">₺180,00</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/kkkgiderici.png" alt="kkkgiderici" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">OneVet</span>
                         <h3 class="product-name">OneVet Kedi Kumu Koku Giderici</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺24,90"><span class="variant-name">Çiçek Kokulu</span><span class="variant-price">₺24,90</span></button>
-                            <button class="variant-btn" data-price="₺24,90"><span class="variant-name">Sabunlu</span><span class="variant-price">₺24,90</span></button>
-                            <button class="variant-btn" data-price="₺24,90"><span class="variant-name">Lavanta</span><span class="variant-price">₺24,90</span></button>
+                            <button class="variant-btn active" data-price="₺24,90"><span class="variant-name">Çiçek
+                                    Kokulu</span><span class="variant-price">₺24,90</span></button>
+                            <button class="variant-btn" data-price="₺24,90"><span
+                                    class="variant-name">Sabunlu</span><span
+                                    class="variant-price">₺24,90</span></button>
+                            <button class="variant-btn" data-price="₺24,90"><span
+                                    class="variant-name">Lavanta</span><span
+                                    class="variant-price">₺24,90</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%38 İndirim</span><div class="product-price"><span class="old-price">₺40,00</span><span class="new-price">₺24,90</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%38 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺40,00</span><span
+                                    class="new-price">₺24,90</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/vitamin1.webp" alt="vitamin1" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">OneVet</span>
                         <h3 class="product-name">OneVet Biotin Kedi ve Köpekler İçin Tüy Dökülmesini Önleyici Damla</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺280,00"><span class="variant-name">50ML</span><span class="variant-price">₺280,00</span></button>
+                            <button class="variant-btn active" data-price="₺280,00"><span
+                                    class="variant-name">50ML</span><span class="variant-price">₺280,00</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%40 İndirim</span><div class="product-price"><span class="old-price">₺470,00</span><span class="new-price">₺280,00</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%40 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺470,00</span><span
+                                    class="new-price">₺280,00</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/yavruköpekmaması2.png" alt="yavruköpekmaması2" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i></div>
                         <span class="product-brand">Signature</span>
                         <h3 class="product-name">Signature Kuzulu Küçük Irk Yavru Köpek Maması</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺749,90"><span class="variant-name">3Kg</span><span class="variant-price">₺749,90</span></button>
-                            <button class="variant-btn" data-price="₺2.240,90"><span class="variant-name">12Kg</span><span class="variant-price">₺2.240,90</span></button>
+                            <button class="variant-btn active" data-price="₺749,90"><span
+                                    class="variant-name">3Kg</span><span class="variant-price">₺749,90</span></button>
+                            <button class="variant-btn" data-price="₺2.240,90"><span
+                                    class="variant-name">12Kg</span><span
+                                    class="variant-price">₺2.240,90</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%44 İndirim</span><div class="product-price"><span class="old-price">₺1.240,90</span><span class="new-price">₺749,90</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%44 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺1.240,90</span><span
+                                    class="new-price">₺749,90</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/oyuncak3.png" alt="oyuncak3" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">PetzzCats</span>
                         <h3 class="product-name">PetzzCats Fish Matatabili ve Çıngıraklı Sesli Peluş Kedi Oyuncağı</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺234,00"><span class="variant-name">Beyaz</span><span class="variant-price">₺234,00</span></button>
-                            <button class="variant-btn" data-price="₺234,00"><span class="variant-name">Mavi</span><span class="variant-price">₺234,00</span></button>
-                            <button class="variant-btn" data-price="₺234,00"><span class="variant-name">Turuncu</span><span class="variant-price">₺234,00</span></button>
+                            <button class="variant-btn active" data-price="₺234,00"><span
+                                    class="variant-name">Beyaz</span><span class="variant-price">₺234,00</span></button>
+                            <button class="variant-btn" data-price="₺234,00"><span class="variant-name">Mavi</span><span
+                                    class="variant-price">₺234,00</span></button>
+                            <button class="variant-btn" data-price="₺234,00"><span
+                                    class="variant-name">Turuncu</span><span
+                                    class="variant-price">₺234,00</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%29 İndirim</span><div class="product-price"><span class="old-price">₺330,00</span><span class="new-price">₺234,00</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%29 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺330,00</span><span
+                                    class="new-price">₺234,00</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/kmont.png" alt="kmont" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">Lindn Dogs</span>
                         <h3 class="product-name">Lindn Dogs Air Puff Deep Köpek Montu</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺1.578,50"><span class="variant-name">Beden 1</span><span class="variant-price">₺1.578,50</span></button>
-                            <button class="variant-btn" data-price="₺1.578,50"><span class="variant-name">Beden 2</span><span class="variant-price">₺1.578,50</span></button>
-                            <button class="variant-btn" data-price="₺1.652,50"><span class="variant-name">Beden 3</span><span class="variant-price">₺1.652,50</span></button>
-                            <button class="variant-btn" data-price="₺1.652,50"><span class="variant-name">Beden 4</span><span class="variant-price">₺1.652,50</span></button>
+                            <button class="variant-btn active" data-price="₺1.578,50"><span class="variant-name">Beden
+                                    1</span><span class="variant-price">₺1.578,50</span></button>
+                            <button class="variant-btn" data-price="₺1.578,50"><span class="variant-name">Beden
+                                    2</span><span class="variant-price">₺1.578,50</span></button>
+                            <button class="variant-btn" data-price="₺1.652,50"><span class="variant-name">Beden
+                                    3</span><span class="variant-price">₺1.652,50</span></button>
+                            <button class="variant-btn" data-price="₺1.652,50"><span class="variant-name">Beden
+                                    4</span><span class="variant-price">₺1.652,50</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%43 İndirim</span><div class="product-price"><span class="old-price">₺2.770,00</span><span class="new-price">₺1.578,50</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%43 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺2.770,00</span><span
+                                    class="new-price">₺1.578,50</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/köpekmamasukabı.jpg" alt="köpekmamasukabı" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Trixie</span>
                         <h3 class="product-name">Trixie Bovi Kedi ve Köpek Seramik Mama Su Kabı</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺522,00"><span class="variant-name">0.4 Lt</span><span class="variant-price">₺522,00</span></button>
-                            <button class="variant-btn" data-price="₺697,00"><span class="variant-name">0.75 Lt</span><span class="variant-price">₺697,00</span></button>
+                            <button class="variant-btn active" data-price="₺522,00"><span class="variant-name">0.4
+                                    Lt</span><span class="variant-price">₺522,00</span></button>
+                            <button class="variant-btn" data-price="₺697,00"><span class="variant-name">0.75
+                                    Lt</span><span class="variant-price">₺697,00</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%50 İndirim</span><div class="product-price"><span class="old-price">₺1.044,00</span><span class="new-price">₺522,00</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%50 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺1.044,00</span><span
+                                    class="new-price">₺522,00</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/kmamavesukabı2.png" alt="kmamavesukabı2" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Trixie</span>
                         <h3 class="product-name">Trixie Kavuk Kaymaz Tabanlı Seramik Köpek Mama ve Su Kabı</h3>
                         <div class="product-variants">
-                             <button class="variant-btn active" data-price="₺483,75"><span class="variant-name">0,3 Lt</span><span class="variant-price">₺483,75</span></button>
-                             <button class="variant-btn" data-price="₺701,00"><span class="variant-name">0,6 Lt</span><span class="variant-price">₺701,00</span></button>
-                             <button class="variant-btn" data-price="₺1.087,00"><span class="variant-name">1 Lt</span><span class="variant-price">₺1.087,00</span></button>
+                            <button class="variant-btn active" data-price="₺483,75"><span class="variant-name">0,3
+                                    Lt</span><span class="variant-price">₺483,75</span></button>
+                            <button class="variant-btn" data-price="₺701,00"><span class="variant-name">0,6
+                                    Lt</span><span class="variant-price">₺701,00</span></button>
+                            <button class="variant-btn" data-price="₺1.087,00"><span class="variant-name">1
+                                    Lt</span><span class="variant-price">₺1.087,00</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%44 İndirim</span><div class="product-price"><span class="old-price">₺871,00</span><span class="new-price">₺483,75</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%44 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺871,00</span><span
+                                    class="new-price">₺483,75</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/biberon.png" alt="biberon" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i></div>
                         <span class="product-brand">Trixie</span>
                         <h3 class="product-name">Trixie Yavru Pet Biberon Seti</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺313,34"><span class="variant-name">57 ML</span><span class="variant-price">₺313,34</span></button>
+                            <button class="variant-btn active" data-price="₺313,34"><span class="variant-name">57
+                                    ML</span><span class="variant-price">₺313,34</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%44 İndirim</span><div class="product-price"><span class="old-price">₺564,00</span><span class="new-price">₺313,34</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%44 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺564,00</span><span
+                                    class="new-price">₺313,34</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/ktuvaleti.png" alt="ktuvaleti" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Trixie</span>
                         <h3 class="product-name">Trixie Maddy Junior Üstü Açılır Kapalı Kedi Tuvaleti</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺1.750,00"><span class="variant-name">Gri</span><span class="variant-price">₺1.750,00</span></button>
-                            <button class="variant-btn" data-price="₺1.755,00"><span class="variant-name">Mavi</span><span class="variant-price">₺1.755,00</span></button>
-                            <button class="variant-btn" data-price="₺1.755,00"><span class="variant-name">Pembe</span><span class="variant-price">₺1.755,00</span></button>
+                            <button class="variant-btn active" data-price="₺1.750,00"><span
+                                    class="variant-name">Gri</span><span class="variant-price">₺1.750,00</span></button>
+                            <button class="variant-btn" data-price="₺1.755,00"><span
+                                    class="variant-name">Mavi</span><span
+                                    class="variant-price">₺1.755,00</span></button>
+                            <button class="variant-btn" data-price="₺1.755,00"><span
+                                    class="variant-name">Pembe</span><span
+                                    class="variant-price">₺1.755,00</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%41 İndirim</span><div class="product-price"><span class="old-price">₺2.975,00</span><span class="new-price">₺1.750,00</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%41 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺2.975,00</span><span
+                                    class="new-price">₺1.750,00</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/patitemizlemeköpüğü.png" alt="patitemizlemeköpüğü" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Proline</span>
                         <h3 class="product-name">Proline Kedi ve Köpekler için Pati Temizleme Köpüğü</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="₺249,11"><span class="variant-name">150 ML</span><span class="variant-price">₺249,11</span></button>
+                            <button class="variant-btn active" data-price="₺249,11"><span class="variant-name">150
+                                    ML</span><span class="variant-price">₺249,11</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%44 İndirim</span><div class="product-price"><span class="old-price">₺448,40</span><span class="new-price">₺249,11</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%44 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺448,40</span><span
+                                    class="new-price">₺249,11</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
-                 <div class="product-card discount-card">
+                <div class="product-card discount-card">
                     <div class="shipping-badge"><i class="fa-solid fa-truck"></i><span>Kargo<br>Bedava</span></div>
                     <img src="urunimg/köpektaşımakafesi.png" alt="köpektaşımakafesi" class="product-image">
                     <div class="product-info">
-                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+                        <div class="product-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i></div>
                         <span class="product-brand">Imac</span>
                         <h3 class="product-name">Imac Carry 60 Köpek Taşıma Çantası</h3>
                         <div class="product-variants">
-                            <button class="variant-btn active" data-price="60x40x40 cm"><span class="variant-price">30x40x40 cm</span></button>
-                            <button class="variant-btn active" data-price="₺1.715,00"><span class="variant-name">Mavi</span><span class="variant-price">₺1.715,00</span></button>
-                            <button class="variant-btn" data-price="₺1.715,00"><span class="variant-name">Gri</span><span class="variant-price">₺1.715,00</span></button>
-                            <button class="variant-btn" data-price="₺1.715,00"><span class="variant-name">Pembe</span><span class="variant-price">₺1.715,00</span></button>
+                            <button class="variant-btn active" data-price="60x40x40 cm"><span
+                                    class="variant-price">30x40x40 cm</span></button>
+                            <button class="variant-btn active" data-price="₺1.715,00"><span
+                                    class="variant-name">Mavi</span><span
+                                    class="variant-price">₺1.715,00</span></button>
+                            <button class="variant-btn" data-price="₺1.715,00"><span
+                                    class="variant-name">Gri</span><span class="variant-price">₺1.715,00</span></button>
+                            <button class="variant-btn" data-price="₺1.715,00"><span
+                                    class="variant-name">Pembe</span><span
+                                    class="variant-price">₺1.715,00</span></button>
                         </div>
-                        <div class="price-bar"><span class="discount-text">%41 İndirim</span><div class="product-price"><span class="old-price">₺2.916,00</span><span class="new-price">₺1.715,00</span></div></div>
+                        <div class="price-bar"><span class="discount-text">%41 İndirim</span>
+                            <div class="product-price"><span class="old-price">₺2.916,00</span><span
+                                    class="new-price">₺1.715,00</span></div>
+                        </div>
                         <div class="product-controls">
-                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease" disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn" data-action="increase">+</button></div>
-                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
+                            <div class="quantity-selector"><button class="quantity-btn" data-action="decrease"
+                                    disabled>-</button><span class="quantity-value">1</span><button class="quantity-btn"
+                                    data-action="increase">+</button></div>
+                            <button class="btn-add-to-cart"><span class="btn-text">Sepete Ekle</span><span
+                                    class="btn-icon"><i class="fa-solid fa-basket-shopping"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -692,20 +952,20 @@
 
         <section class="info-banner">
             <div class="banner-content">
-                 <h2>Mutlu Dostlar, Memnun Sahipler!</h2>
-                 <p>7/24 hızlı teslimat ve %100 müşteri memnuniyeti garantisiyle yanınızdayız!</p>
-                 <div class="features">
-                     <div class="feature-item"><i class="fa-solid fa-truck-fast"></i> Hızlı Teslimat</div>
-                     <div class="feature-item"><i class="fa-solid fa-headset"></i> 7/24 Destek</div>
-                     <div class="feature-item"><i class="fa-solid fa-shield-halved"></i> Güvenli Alışveriş</div>
-                 </div>
-                 <a href="#" class="btn-explore">HEMEN KEŞFET <i class="fa-solid fa-arrow-right"></i></a>
+                <h2>Mutlu Dostlar, Memnun Sahipler!</h2>
+                <p>7/24 hızlı teslimat ve %100 müşteri memnuniyeti garantisiyle yanınızdayız!</p>
+                <div class="features">
+                    <div class="feature-item"><i class="fa-solid fa-truck-fast"></i> Hızlı Teslimat</div>
+                    <div class="feature-item"><i class="fa-solid fa-headset"></i> 7/24 Destek</div>
+                    <div class="feature-item"><i class="fa-solid fa-shield-halved"></i> Güvenli Alışveriş</div>
+                </div>
+                <a href="#" class="btn-explore">HEMEN KEŞFET <i class="fa-solid fa-arrow-right"></i></a>
             </div>
-            
-            
+
+
     </main>
 
- <footer>
+    <footer>
         <div class="container footer-grid">
             <div class="footer-links">
                 <div class="footer-column">
@@ -738,30 +998,86 @@
                     </ul>
                 </div>
             </div>
-           <div class="footer-social">
-    <h3>Sosyal Medyadan Bizi Takip Edin!</h3>
-    
-    <div class="social-icons">
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
-    </div>
+            <div class="footer-social">
+                <h3>Sosyal Medyadan Bizi Takip Edin!</h3>
 
-    <div class="whatsapp-container">
-        <i class="fa-brands fa-whatsapp"></i>
-        <p>WhatsApp kanalımıza Buradan katılabilirsiniz!</p>
-    </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
 
-    <div class="qr-code">
-        <img src="img/qr.png" alt="qr" style="width:100%; height:100%; object-fit:contain;">
-    </div>
-</div>
+                <div class="whatsapp-container">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p>WhatsApp kanalımıza Buradan katılabilirsiniz!</p>
+                </div>
+
+                <div class="qr-code">
+                    <img src="img/qr.png" alt="qr" style="width:100%; height:100%; object-fit:contain;">
+                </div>
             </div>
-        </div> 
+        </div>
+        </div>
         <p class="copyright-text">&copy; 2025 Petify. Tüm hakları saklıdır.</p>
     </footer>
 
     <script src="anasayfa.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. HAMBURGER MENÜ (Ödeme Sayfası Mantığı)
+            const hamburgerBtn = document.querySelector('.hamburger-menu');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            if (hamburgerBtn && mobileMenu) {
+                hamburgerBtn.addEventListener('click', () => {
+                    // Menüye 'menu-open' class'ını ekle/çıkar (CSS bunu kullanıyor)
+                    mobileMenu.classList.toggle('menu-open');
+
+                    // İkonu değiştir (Çizgiler <-> Çarpı)
+                    const icon = hamburgerBtn.querySelector('i');
+                    if (mobileMenu.classList.contains('menu-open')) {
+                        if (icon) icon.classList.replace('fa-bars', 'fa-xmark');
+                    } else {
+                        if (icon) icon.classList.replace('fa-xmark', 'fa-bars');
+                    }
+                });
+            }
+
+            // 2. ALT MENÜLER (Dropdown)
+            const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+            submenuToggles.forEach(toggle => {
+                toggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Tıklanan butonun yanındaki veya altındaki mega menüyü bul
+                    // HTML yapına göre: nav-link-wrapper'ın kardeşi olan .mega-menu'yü bulmalıyız
+                    const parentItem = toggle.closest('.nav-item');
+                    const megaMenu = parentItem ? parentItem.querySelector('.mega-menu') : null;
+
+                    if (megaMenu) {
+                        // Menüyü aç/kapat
+                        megaMenu.classList.toggle('active');
+
+                        // Ok işaretini döndür
+                        const icon = toggle.querySelector('i');
+                        if (megaMenu.classList.contains('active')) {
+                            icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                        } else {
+                            icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                        }
+                    }
+                });
+            });
+
+            // 3. SEPETE EKLEME & MİKTAR (Mevcut kodlarının çalışması için)
+            // Buraya anasayfa.js içindeki diğer ürün fonksiyonlarını ekleyebilirsin
+            // veya harici dosyanda tutuyorsan bu kod o dosyada kalabilir.
+        });
+    </script>
 </body>
+
 </html>
